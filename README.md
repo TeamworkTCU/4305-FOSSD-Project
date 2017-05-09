@@ -5,7 +5,7 @@ Thành viên tham gia:
 
 Nguyễn Đức Tiến | 0948.278.451 | ductien96.vn@gmail.com 
 
-Trịnh Đình Phúc | 0121.658.5084 | phuccoi996@gmail
+Trịnh Đình Phúc | 0121.658.5084 | phuccoi996@gmail.com
 
 Đề tài: Chương trình lên lịch công việc
 
