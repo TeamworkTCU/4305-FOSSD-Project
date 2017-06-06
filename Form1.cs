@@ -15,8 +15,24 @@ namespace Calendar_PT
         public Form1()
         {
             InitializeComponent();
+            LoadMatrix();
         }
+        void LoadMatrix()
+        {
+            Button oldBtn = new Button() { Width=-0, Height=0,Location = new Point(0,0)};
+            for (int j = 0; j < Cons.DayOfColumn; j++)
+            { for (int i = 0; i < Cons.DayOfWeek; i++) {
+                    Button btn = new Button() { Width = Cons.dateButtonWidth +Cons.margin, Height = Cons.dateButtonHeight };
+                    btn.Location = new Point(oldBtn.Location.X + oldBtn.Width, oldBtn.Location.Y);
+                    pnlMatrix.Controls.Add(btn);
+                    oldBtn = btn;
 
+                }
+                oldBtn = new Button() { Width = 0, Height = 0, Location = new Point(0, oldBtn.Location.Y + Cons.dateButtonHeight) };
+            }
+
+
+        }
         private void btnMonday_Click(object sender, EventArgs e)
         {
 
@@ -71,5 +87,21 @@ namespace Calendar_PT
         {
 
         }
+
+        private void panel5_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnWed_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
+
