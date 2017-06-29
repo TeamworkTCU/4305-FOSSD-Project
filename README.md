@@ -7,6 +7,7 @@ Nguyễn Đức Tiến | 0948.278.451 | ductien96.vn@gmail.com
 
 Trịnh Đình Phúc | 016.888.900.93 | phuccoi996@gmail.com
 
+
 # Project Title
 
 One Paragraph of project description goes here
@@ -94,5 +95,3 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 * Hat tip to anyone who's code was used
 * Inspiration
 * etc
-
-
