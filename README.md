@@ -7,6 +7,7 @@ Ngày nay, CNTT đã và đang đóng vai trò quan trọng trong đời sống 
 Xuất phát từ nhu cầu thực tế đó, trong công việc kinh doanh, bán hàng của chủ quán cà phê Tôm Tít, việc quản lý hệ thống thông tin bán hàng là một việc không thể thiếu. Nhằm thay thế một số công việc mà trước đó phải thao tác bằng tay trên giấy tờ đạt hiệu quả không cao, mất nhiều thời gian. Vì vậy, chúng em đã chọn thực hiện xây dựng một phần mềm được viết bằng ngôn ngữ C# kết nối với hệ quản trị CSDL MS SQL Server với đề tài “Xây dựng phần mềm quản lý quán cà phê Tôm Tít”.
 
 
+
 ## Kiến thức áp dụng
 
 * Sử dụng các control cơ bản và nâng cao trong Winform. 
@@ -54,6 +55,8 @@ End with an example of getting some data out of the system or using it for a lit
 Explain how to run the automated tests for this system
 
 ### Break down into end to end tests
+
+=======
 
 Explain what these tests test and why
 
