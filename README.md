@@ -1,10 +1,5 @@
 # 4305-FOSSD-Project
-Free &amp; Open Source Software Development Project
-
-Thành viên tham gia:
-
-
-
+* **Đồ án môn học Phát triển phần mềm mã nguồn mở**
 
 # Phần mềm quản lý quán cà phê Tôm Tít
 
@@ -80,8 +75,8 @@ Add additional notes about how to deploy this on a live system
 
 ## Nền tảng xây dựng
 
-* [C# .NET](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [MS SQL Server](https://maven.apache.org/) - Dependency Management
+* [C# .NET](https://goo.gl/k4TNvU) - Nền tảng hệ thống phần mềm
+* [MS SQL Server](https://goo.gl/UKLeUi) - Nền tảng cơ sở dữ liệu
 
 ## Đóng góp
 
@@ -89,7 +84,7 @@ Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c6
 
 ## Phiên bản
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+Chúng em dùng [Git](https://git-scm.com/) để tổ chức quản lý phiên bản theo hướng phân tán  for versioning.
 
 ## Tác giả
 
@@ -102,4 +97,4 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 ## Lời cảm ơn
 
-Để hoàn thành tốt đề tài này chúng em xin cảm ơn thầy Mai Cường Thọ và thầy Bùi Chí Thành – giảng viên khoa CNTT Trường Đại học Nha Trang cùng các thầy cô bộ môn Kỹ thuật phần mềm đã tạo điều kiện cho chúng em nghiên cứu và hoàn thành đề tài. Một lần nữa chúng em xin trân trọng cảm ơn thầy Mai Cường Thọ đã tận tình giúp đỡ, hướng dẫn chúng em trong suốt quá trình thực hiện đề tài.
+Để hoàn thành tốt đề tài này chúng em xin cảm ơn thầy Mai Cường Thọ – giảng viên khoa CNTT Trường Đại học Nha Trang cùng các thầy cô bộ môn Kỹ thuật phần mềm đã tạo điều kiện cho chúng em nghiên cứu và hoàn thành đề tài. Một lần nữa chúng em xin trân trọng cảm ơn thầy Mai Cường Thọ đã tận tình giúp đỡ, hướng dẫn chúng em trong suốt quá trình thực hiện đề tài.
