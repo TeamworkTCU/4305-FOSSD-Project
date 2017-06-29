@@ -14,42 +14,19 @@ Xuất phát từ nhu cầu thực tế đó, trong công việc kinh doanh, bá
 
 ## Kiến thức áp dụng
 
-Sử dụng các control cơ bản và nâng cao trong Winform. 
+* Sử dụng các control cơ bản và nâng cao trong Winform. 
+* DataGridView, DataSet, DataTable, DataRow.
+* Phân tích thiết kế hệ thống cơ sở dữ liệu.
+* Phân tích thiết kế giao diện.
+* Trigger SQL.
+* Procedure, function SQL.
+* Kết nối SQL server với ứng dụng winform dùng ADO.Net.
+* Event và Event nâng cao.
+* Chuyển data giữa các form.
+* Phân quyền người dùng trên ứng dụng.
+* DataBiding cơ bản và nâng cao.
+* Thêm, xóa, sửa dữ liệu từ trang quản trị.
 
-```
-DataGridView, DataSet, DataTable, DataRow.
-
-```
-Phân tích thiết kế hệ thống cơ sở dữ liệu.
-
-```
-Phân tích thiết kế giao diện.
-
-```
-Trigger SQL.
-
-```
-Procedure, function SQL.
-
-```
-Kết nối SQL server với ứng dụng winform dùng ADO.Net.
-
-```
-Event và Event nâng cao.
-
-```
-Chuyển data giữa các form.
-
-```
-Phân quyền người dùng trên ứng dụng.
-
-```
-DataBiding cơ bản và nâng cao.
-
-```
-Thêm, xóa, sửa dữ liệu từ trang quản trị.
-
-```
 
 ### Prerequisites
 
