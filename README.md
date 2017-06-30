@@ -77,11 +77,11 @@ Cách 3: Presentation, BLL, DAL
 
 ## Đóng góp
 
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
+Vui lòng đọc [CONTRIBUTING.md](https://github.com/TeamworkTCU/4305-FOSSD-Project) để biết thêm chi tiết về quy tắc và trình tự đóng góp vào dự án với chúng tôi
 
 ## Phiên bản
 
-Chúng em dùng [Git](https://git-scm.com/) để tổ chức quản lý phiên bản theo hướng phân tán  for versioning.
+Chúng tôi dùng [Git](https://git-scm.com/) để tổ chức quản lý phiên bản theo hướng phân tán.
 
 ## Tác giả
 
