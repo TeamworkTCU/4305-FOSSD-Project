@@ -23,7 +23,53 @@ Xuất phát từ nhu cầu thực tế đó, trong công việc kinh doanh, bá
 * DataBiding cơ bản và nâng cao.
 * Thêm, xóa, sửa dữ liệu từ trang quản trị.
 
+## Chuẩn Lập Trình
+* Mục đích:
 
+Đưa ra các quy ước khi coding với ngôn ngữ lập trình C#, với các quy tắc này giúp tiết kiệm thời gian rất lớn trong tiến trình phát triển phần mềm và cả trong quá trình bảo trì sản phẩm. Giúp sinh viên quen với làm việc theo nhóm.
+Tài liệu này chủ yếu hướng dẫn sinh viên với ngôn ngữ lập trình C#, nhưng có rất nhiều quy tắc được sử dụng trong nhiều ngôn ngữ lập trình khác tích hợp trong bộ công cụ Visual Studio .NET.
+Phạm vi áp dụng:
+
+Những lập trình viên tham gia dự án phát triển bằng ngôn ngữ C# và công cụ Visual Studio .Net.
+
+Định nghĩa và những từ viết tắt:
+
+Ký pháp Hungarian là cách quy định đặt tên biến như sau: bắt đầu tên biến thì viết chữ thường và các chữ đầu thể hiện kiểu dữ liệu của biến, và được gọi là các tiền tố
+
+* Tài liệu liên quan
+
+https://msdn.microsoft.com/en-us/library/ff926074.aspx
+http://www.dofactory.com/reference/csharp-coding-standards
+http://se.inf.ethz.ch/old/teaching/ss2007/251-0290-00/project/CSharpCodingStandards.pdf
+Các nội dung quy định:
+
+*  Các kiểu quy ước viết hoa:
+
+* Có 3 quy tắc viết hoa:
+
+- Pascal Case
+
+Chữ cái đầu tiên trong từ định danh và chữ cái đầu tiên của mỗi từ nối theo sau phải được viết hoa. Sử dụng Pascal Case để đặt tên cho một tên có từ 3 ký tự trở lên.
+
+Ví dụ: BackColor
+
+- Camel Case
+
+Chữ cái đầu tiên trong từ định danh là chữ thường và chữ cái đầu tiên của mối từ nối theo sau phải được viết hoa.
+
+Ví dụ: backColor
+
+- Uppercase
+
+Tất cả các ký tự trong từ định danh phải được viết hoa. Sử dụng quy tắc này đối với tên định danh có từ 2 ký tự trở xuống.
+
+Ví dụ:
+
+System.IO
+
+System.Web.IO
+### Một số lưu ý trong cách đặt tên cho các thành phần 
+* (xem thêm tại [ChuanLapTrinh.md](https://github.com/TeamworkTCU/4305-FOSSD-Project/blob/Phuc/Chu%E1%BA%A9n%20L%E1%BA%ADp%20Tr%C3%ACnh) )
 ## Triển khai
 
 Add additional notes about how to deploy this on a live system
