@@ -41,39 +41,35 @@ Ký pháp Hungarian là cách quy định đặt tên biến như sau: bắt đ�
 https://msdn.microsoft.com/en-us/library/ff926074.aspx
 http://www.dofactory.com/reference/csharp-coding-standards
 http://se.inf.ethz.ch/old/teaching/ss2007/251-0290-00/project/CSharpCodingStandards.pdf
-Các nội dung quy định:
 
-*  Các kiểu quy ước viết hoa:
-
-* Có 3 quy tắc viết hoa:
-
-- Pascal Case
-
-Chữ cái đầu tiên trong từ định danh và chữ cái đầu tiên của mỗi từ nối theo sau phải được viết hoa. Sử dụng Pascal Case để đặt tên cho một tên có từ 3 ký tự trở lên.
-
-Ví dụ: BackColor
-
-- Camel Case
-
-Chữ cái đầu tiên trong từ định danh là chữ thường và chữ cái đầu tiên của mối từ nối theo sau phải được viết hoa.
-
-Ví dụ: backColor
-
-- Uppercase
-
-Tất cả các ký tự trong từ định danh phải được viết hoa. Sử dụng quy tắc này đối với tên định danh có từ 2 ký tự trở xuống.
-
-Ví dụ:
-
-System.IO
-
-System.Web.IO
 ### Một số lưu ý trong cách đặt tên cho các thành phần 
 * (xem thêm tại [ChuanLapTrinh.md](https://github.com/TeamworkTCU/4305-FOSSD-Project/blob/Phuc/Chu%E1%BA%A9n%20L%E1%BA%ADp%20Tr%C3%ACnh) )
 ## Triển khai
 
-Add additional notes about how to deploy this on a live system
+Đề Tài Cafe Tôm Tít được triển khai theo mô hình 3 lớp (Presentation - Bussiness Logic - Data Access)
+Khi bạn làm việc với các ứng dụng, nếu với những dự án nhỏ thì việc tạo một ứng dụng theo ý của chúng ta rất dễ dàng, tuy nhiên khi bạn làm với những dự án lớn hơn, cần nhiều người cùng làm hơn thì việc lập trình trở nên phức tạp hơn, vậy nên đễ dễ dàng hơn trong việc quản lý các thành phần của hệ thống cũng như ảnh hưởng tới các thành phần khác khi ta thay đổi một thành phần, chúng ta thường nhóm các thành phần có cùng chức năng lại với nhau. Chính vì thế các mô hình lập trình được sinh ra, một trong những mô hình lập trình đó là mô hình 3 lớp (3 - Layer).
+* Presentation Layers
+Lớp này làm nhiệm vụ giao tiếp với người dùng cuối để thu thập dữ liệu và hiển thị kết quả/dữ liệu thông qua các thành phần trong giao diện người sử dụng. Trong .NET thì bạn có thể dùng Windows Forms, ASP.NET hay Mobile Forms để hiện thực lớp này.
+Lưu ý : Lớp này không nên sử dụng trực tiếp các dịch vụ của lớp Data Access mà nên sử dụng thông qua các service của lớp Business Logic vì khi bạn sử dụng trực tiếp như vậy, bạn có thể bỏ qua các ràng buộc, các logic nghiệp vụ mà ứng dụng cần phải có. Và hơn nữa nếu sử dụng như vậy thì đâu cần đến 3 lớp phải không bạn?
+* Business Logic Layer
+Đây là layer xử lý chính các dữ liệu trước khi được đưa lên hiển thị trên màn hình hoặc xử lý các dữ liệu trước khi chuyển xuống Data Access Layer để lưu dữ liệu xuống cơ sở dữ liệu.
+Đây là nơi đê kiểm tra ràng buộc, các yêu cầu nghiệp vụ, tính toán, xử lý các yêu cầu và lựa chọn kết quả trả về cho Presentation Layers.
+* Data Access Layer
+Lớp này thực hiện các nghiệp vụ liên quan đến lưu trữ và truy xuất dữ liệu của ứng dụng như đọc, lưu, cập nhật cơ sở dữ liệu.
 
+* Cách vận hành của mô hình
+Đối với 3-Layer, yêu cầu được xử lý tuần tự qua các layer như hình.
+- Đầu tiên User giao tiếp với Presentation Layers (GUI) để gửi đi thông tin và yêu cầu. Tại layer này, các thông tin sẽ được kiểm tra, nếu OK chúng sẽ được chuyển xuống Business Logic Layer (BLL).
+- Tại BLL, các thông tin sẽ được nhào nặn, tính toán theo đúng yêu cầu đã gửi, nếu không cần đến Database thì BLL sẽ gửi trả kết quả về GUI, ngược lại nó sẽ đẩy dữ liệu (thông tin đã xử lý) xuống Data Access Layer (DAL).
+- DAL sẽ thao tác với Database và trả kết quả về cho BLL, BLL kiểm tra và gửi nó lên GUI để hiển thị cho người dùng.
+- Một khi gặp lỗi (các trường hợp không đúng dữ liệu) thì đang ở layer nào thì quăng lên trên layer cao hơn nó 1 bậc cho tới GUI thì sẽ quăng ra cho người dùng biết
+- Các dữ liệu được trung chuyển giữa các Layer thông qua một đối tượng gọi là Data Transfer Object (DTO), đơn giản đây chỉ là các Class đại diện cho các đối tượng được lưu trữ trong Database.
+
+* Tổ chức mô hình 3-Layer
+Có rất nhiều cách đặt tên cho các thành phần của 3 lớp như:
+Cách 1: GUI, BUS, DAL
+Cách 2: GUI, BLL, DAO, DTO Ở đây chúng tôi xin sử dụng cách này! 
+Cách 3: Presentation, BLL, DAL
 ## Nền tảng xây dựng
 
 * [C# .NET](https://goo.gl/k4TNvU) - Nền tảng hệ thống phần mềm
