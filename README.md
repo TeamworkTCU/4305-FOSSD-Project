@@ -77,7 +77,7 @@ Cách 3: Presentation, BLL, DAL
 
 ## Đóng góp
 
-Vui lòng đọc [CONTRIBUTING.md](https://github.com/TeamworkTCU/4305-FOSSD-Project) để biết thêm chi tiết về quy tắc và trình tự đóng góp vào dự án với chúng tôi
+Vui lòng đọc [CONTRIBUTING.md](https://github.com/TeamworkTCU/4305-FOSSD-Project/blob/master/CONTRIBUTING.md) để biết thêm chi tiết về quy tắc và trình tự đóng góp vào dự án với chúng tôi
 
 ## Phiên bản
 
