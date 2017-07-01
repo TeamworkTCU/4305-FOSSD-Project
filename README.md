@@ -23,59 +23,53 @@ Xuất phát từ nhu cầu thực tế đó, trong công việc kinh doanh, bá
 * DataBiding cơ bản và nâng cao.
 * Thêm, xóa, sửa dữ liệu từ trang quản trị.
 
+## Chuẩn Lập Trình
+* Mục đích:
 
-### Prerequisites
+Đưa ra các quy ước khi coding với ngôn ngữ lập trình C#, với các quy tắc này giúp tiết kiệm thời gian rất lớn trong tiến trình phát triển phần mềm và cả trong quá trình bảo trì sản phẩm. Giúp sinh viên quen với làm việc theo nhóm.
+Tài liệu này chủ yếu hướng dẫn sinh viên với ngôn ngữ lập trình C#, nhưng có rất nhiều quy tắc được sử dụng trong nhiều ngôn ngữ lập trình khác tích hợp trong bộ công cụ Visual Studio .NET.
+Phạm vi áp dụng:
 
-What things you need to install the software and how to install them
+Những lập trình viên tham gia dự án phát triển bằng ngôn ngữ C# và công cụ Visual Studio .Net.
 
-```
-Give examples
-```
+Định nghĩa và những từ viết tắt:
 
-### Installing
+Ký pháp Hungarian là cách quy định đặt tên biến như sau: bắt đầu tên biến thì viết chữ thường và các chữ đầu thể hiện kiểu dữ liệu của biến, và được gọi là các tiền tố
 
-A step by step series of examples that tell you have to get a development env running
+* Tài liệu liên quan
 
-Say what the step will be
+https://msdn.microsoft.com/en-us/library/ff926074.aspx
+http://www.dofactory.com/reference/csharp-coding-standards
+http://se.inf.ethz.ch/old/teaching/ss2007/251-0290-00/project/CSharpCodingStandards.pdf
 
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-=======
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
+### Một số lưu ý trong cách đặt tên cho các thành phần 
+* (xem thêm tại [ChuanLapTrinh.md](https://github.com/TeamworkTCU/4305-FOSSD-Project/blob/Phuc/Chu%E1%BA%A9n%20L%E1%BA%ADp%20Tr%C3%ACnh) )
 ## Triển khai
 
-Add additional notes about how to deploy this on a live system
+Đề Tài Cafe Tôm Tít được triển khai theo mô hình 3 lớp (Presentation - Bussiness Logic - Data Access)
+Khi bạn làm việc với các ứng dụng, nếu với những dự án nhỏ thì việc tạo một ứng dụng theo ý của chúng ta rất dễ dàng, tuy nhiên khi bạn làm với những dự án lớn hơn, cần nhiều người cùng làm hơn thì việc lập trình trở nên phức tạp hơn, vậy nên đễ dễ dàng hơn trong việc quản lý các thành phần của hệ thống cũng như ảnh hưởng tới các thành phần khác khi ta thay đổi một thành phần, chúng ta thường nhóm các thành phần có cùng chức năng lại với nhau. Chính vì thế các mô hình lập trình được sinh ra, một trong những mô hình lập trình đó là mô hình 3 lớp (3 - Layer).
+* Presentation Layers
+Lớp này làm nhiệm vụ giao tiếp với người dùng cuối để thu thập dữ liệu và hiển thị kết quả/dữ liệu thông qua các thành phần trong giao diện người sử dụng. Trong .NET thì bạn có thể dùng Windows Forms, ASP.NET hay Mobile Forms để hiện thực lớp này.
+Lưu ý : Lớp này không nên sử dụng trực tiếp các dịch vụ của lớp Data Access mà nên sử dụng thông qua các service của lớp Business Logic vì khi bạn sử dụng trực tiếp như vậy, bạn có thể bỏ qua các ràng buộc, các logic nghiệp vụ mà ứng dụng cần phải có. Và hơn nữa nếu sử dụng như vậy thì đâu cần đến 3 lớp phải không bạn?
+* Business Logic Layer
+Đây là layer xử lý chính các dữ liệu trước khi được đưa lên hiển thị trên màn hình hoặc xử lý các dữ liệu trước khi chuyển xuống Data Access Layer để lưu dữ liệu xuống cơ sở dữ liệu.
+Đây là nơi đê kiểm tra ràng buộc, các yêu cầu nghiệp vụ, tính toán, xử lý các yêu cầu và lựa chọn kết quả trả về cho Presentation Layers.
+* Data Access Layer
+Lớp này thực hiện các nghiệp vụ liên quan đến lưu trữ và truy xuất dữ liệu của ứng dụng như đọc, lưu, cập nhật cơ sở dữ liệu.
 
+* Cách vận hành của mô hình
+Đối với 3-Layer, yêu cầu được xử lý tuần tự qua các layer như hình.
+- Đầu tiên User giao tiếp với Presentation Layers (GUI) để gửi đi thông tin và yêu cầu. Tại layer này, các thông tin sẽ được kiểm tra, nếu OK chúng sẽ được chuyển xuống Business Logic Layer (BLL).
+- Tại BLL, các thông tin sẽ được nhào nặn, tính toán theo đúng yêu cầu đã gửi, nếu không cần đến Database thì BLL sẽ gửi trả kết quả về GUI, ngược lại nó sẽ đẩy dữ liệu (thông tin đã xử lý) xuống Data Access Layer (DAL).
+- DAL sẽ thao tác với Database và trả kết quả về cho BLL, BLL kiểm tra và gửi nó lên GUI để hiển thị cho người dùng.
+- Một khi gặp lỗi (các trường hợp không đúng dữ liệu) thì đang ở layer nào thì quăng lên trên layer cao hơn nó 1 bậc cho tới GUI thì sẽ quăng ra cho người dùng biết
+- Các dữ liệu được trung chuyển giữa các Layer thông qua một đối tượng gọi là Data Transfer Object (DTO), đơn giản đây chỉ là các Class đại diện cho các đối tượng được lưu trữ trong Database.
+
+* Tổ chức mô hình 3-Layer
+Có rất nhiều cách đặt tên cho các thành phần của 3 lớp như:
+Cách 1: GUI, BUS, DAL
+Cách 2: GUI, BLL, DAO, DTO Ở đây chúng tôi xin sử dụng cách này! 
+Cách 3: Presentation, BLL, DAL
 ## Nền tảng xây dựng
 
 * [C# .NET](https://goo.gl/k4TNvU) - Nền tảng hệ thống phần mềm
@@ -83,11 +77,11 @@ Add additional notes about how to deploy this on a live system
 
 ## Đóng góp
 
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
+Vui lòng đọc [CONTRIBUTING.md](https://github.com/TeamworkTCU/4305-FOSSD-Project/blob/master/CONTRIBUTING.md) để biết thêm chi tiết về quy tắc và trình tự đóng góp vào dự án với chúng tôi
 
 ## Phiên bản
 
-Chúng em dùng [Git](https://git-scm.com/) để tổ chức quản lý phiên bản theo hướng phân tán  for versioning.
+Chúng tôi dùng [Git](https://git-scm.com/) để tổ chức quản lý phiên bản theo hướng phân tán.
 
 ## Tác giả
 
