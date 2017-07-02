@@ -7,7 +7,6 @@ Ngày nay, CNTT đã và đang đóng vai trò quan trọng trong đời sống 
 Xuất phát từ nhu cầu thực tế đó, trong công việc kinh doanh, bán hàng của chủ quán cà phê Tôm Tít, việc quản lý hệ thống thông tin bán hàng là một việc không thể thiếu. Nhằm thay thế một số công việc mà trước đó phải thao tác bằng tay trên giấy tờ đạt hiệu quả không cao, mất nhiều thời gian. Vì vậy, chúng em đã chọn thực hiện xây dựng một phần mềm được viết bằng ngôn ngữ C# kết nối với hệ quản trị CSDL MS SQL Server với đề tài “Xây dựng phần mềm quản lý quán cà phê Tôm Tít”.
 
 
-
 ## Kiến thức áp dụng
 
 * Sử dụng các control cơ bản và nâng cao trong Winform. 
@@ -77,7 +76,11 @@ Cách 3: Presentation, BLL, DAL
 
 ## Đóng góp
 
-Vui lòng đọc [CONTRIBUTING.md](https://github.com/TeamworkTCU/4305-FOSSD-Project/blob/master/CONTRIBUTING.md) để biết thêm chi tiết về quy tắc và trình tự đóng góp vào dự án với chúng tôi
+Vui lòng đọc [Dong_gop.md](https://github.com/TeamworkTCU/4305-FOSSD-Project/blob/master/Dong_gop.md) để biết thêm chi tiết về quy tắc và trình tự đóng góp vào dự án với chúng tôi
+
+## Quy tắc ứng xử
+
+Vui lòng đọc [Quy_tac_ung_xu.md](https://github.com/TeamworkTCU/4305-FOSSD-Project/blob/master/Quy_tac_ung_xu.md) để biết thêm chi tiết về quy tắc ứng xử của chúng tôi.
 
 ## Phiên bản
 
