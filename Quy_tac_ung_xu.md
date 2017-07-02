@@ -38,6 +38,6 @@ Các trường hợp hành vi lạm dụng, quấy rối hoặc không thể ch�
 
 Những người duy trì dự án không tuân theo hoặc thực thi Bộ Quy tắc Ứng xử một cách thiện chí có thể sẽ phải chịu hậu quả tạm thời hoặc vĩnh viễn do các thành viên khác trong Ban lãnh đạo dự án xác định.
 
-## Attribution
+## Ghi nhận tác giả
 
 Quy tắc ứng xử này được điều chỉnh từ [Nguyễn Đức Tiến], phiên bản 1.0.
