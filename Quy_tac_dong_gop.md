@@ -83,6 +83,7 @@ Người bảo trì dự án không tuân theo hoặc thực thi Bộ Quy tắc 
 Đức tin có thể phải đối mặt với hậu quả tạm thời hoặc vĩnh viễn do những người khác quyết định
 Thành viên của ban lãnh đạo dự án.
 
+
 ### Thuộc tính
 
 Quy tắc ứng xử này được điều chỉnh từ [Nguyễn Đức Tiến], phiên bản 1.0
