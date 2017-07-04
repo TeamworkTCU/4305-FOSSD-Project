@@ -42,7 +42,7 @@ http://www.dofactory.com/reference/csharp-coding-standards
 http://se.inf.ethz.ch/old/teaching/ss2007/251-0290-00/project/CSharpCodingStandards.pdf
 
 ### Một số lưu ý trong cách đặt tên cho các thành phần 
-* (xem thêm tại [ChuanLapTrinh.md](https://github.com/TeamworkTCU/4305-FOSSD-Project/blob/Phuc/Chu%E1%BA%A9n%20L%E1%BA%ADp%20Tr%C3%ACnh) )
+* (xem thêm tại [ChuanLapTrinh.md](https://github.com/TeamworkTCU/4305-FOSSD-Project/blob/master/Chuan%20Lap%20Trinh.md) )
 ## Triển khai
 
 Đề Tài Cafe Tôm Tít được triển khai theo mô hình 3 lớp (Presentation - Bussiness Logic - Data Access)
