@@ -93,7 +93,8 @@ Chúng tôi dùng [Git](https://git-scm.com/) để tổ chức quản lý phiê
 
 ## Tài Liệu cho người dùng cuối
 
-Mời các bạn [Click đây để xem tài liệu cho người dùng cuối](chuaxong.com)
+Mời các bạn [Click đây để xem tài liệu cho người dùng cuối](danglammmmmmmmmmmmmmmm)
+
 ## Giấy phép
 
 Đồ án này được cấp phép theo giấy phép của General Public License - xem file [LICENSE.md](LICENSE.md) để biết thêm chi tiết.
