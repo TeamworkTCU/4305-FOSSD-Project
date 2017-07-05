@@ -91,6 +91,9 @@ Chúng tôi dùng [Git](https://git-scm.com/) để tổ chức quản lý phiê
 * **Nguyễn Đức Tiến** - 0948.278.451 | ductien96.vn@gmail.com 
 * **Trịnh Đình Phúc** - 016.888.900.93 | phuccoi996@gmail.com
 
+## Tài Liệu cho người dùng cuối
+
+Mời các bạn [Click đây để xem tài liệu cho người dùng cuối](chuaxong.com)
 ## Giấy phép
 
 Đồ án này được cấp phép theo giấy phép của General Public License - xem file [LICENSE.md](LICENSE.md) để biết thêm chi tiết.
