@@ -94,13 +94,14 @@ Chúng tôi dùng [Git](https://git-scm.com/) để tổ chức quản lý phiê
 * **Nguyễn Đức Tiến** - 0948.278.451 | ductien96.vn@gmail.com 
 * **Trịnh Đình Phúc** - 016.888.900.93 | phuccoi996@gmail.com
 
+## Giấy phép
+
+Đồ án này được cấp phép theo giấy phép của General Public License - xem file [LICENSE.md](LICENSE.md) để biết thêm chi tiết.
+
 ## Tài Liệu cho người dùng cuối
 
 Mời các bạn [Click đây để xem tài liệu cho người dùng cuối](https://github.com/TeamworkTCU/4305-FOSSD-Project/blob/Phuc/T%C3%A0i%20Li%E1%BB%87u%20cho%20ng%C6%B0%E1%BB%9Di%20d%C3%B9ng%20cu%E1%BB%91i.md)
 
-## Giấy phép
-
-Đồ án này được cấp phép theo giấy phép của General Public License - xem file [LICENSE.md](LICENSE.md) để biết thêm chi tiết.
 ## Tài Liệu cho nhà phát triển
 Mời các bạn [Click đây để xem tài liệu cho nhà phát triển](https://github.com/TeamworkTCU/4305-FOSSD-Project/blob/master/T%C3%A0i%20li%E1%BB%87u%20cho%20nh%C3%A0%20ph%C3%A1t%20tri%E1%BB%83n.md
 )
