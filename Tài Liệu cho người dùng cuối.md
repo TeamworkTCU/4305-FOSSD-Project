@@ -25,47 +25,41 @@
 ![Form Tính Tiền ](https://github.com/TeamworkTCU/4305-FOSSD-Project/blob/Phuc/8.PNG)
 
 ## Chi tiết các form
+
 ### Form đăng nhập
-Công dụng: 
-Cách sử dụng:
-Các điều kiện ràng buộc: 
+* Công dụng: 
+* Cách sử dụng:
+* Các điều kiện ràng buộc: 
 ### Form chính 
-Công dụng: 
-Cách sử dụng:
-Các điều kiện ràng buộc: 
+* Công dụng: 
+* Cách sử dụng:
+* Các điều kiện ràng buộc: 
 ### Form Doanh thu 
-
-Công dụng: 
-Cách sử dụng:
-Các điều kiện ràng buộc: 
+* Công dụng: 
+* Cách sử dụng:
+* Các điều kiện ràng buộc:  
 ### Form Thức ăn 
-
-Công dụng: 
-Cách sử dụng:
-Các điều kiện ràng buộc: 
+* Công dụng: 
+* Cách sử dụng:
+* Các điều kiện ràng buộc: 
 ### Form Danh mục 
-
-Công dụng: 
-Cách sử dụng:
-Các điều kiện ràng buộc: 
+* Công dụng: 
+* Cách sử dụng:
+* Các điều kiện ràng buộc: 
 ### Form Bàn ăn 
-
-Công dụng: 
-Cách sử dụng:
-Các điều kiện ràng buộc: 
+* Công dụng: 
+* Cách sử dụng:
+* Các điều kiện ràng buộc: 
 ### Form tài khoản 
-
-Công dụng: 
-Cách sử dụng:
-Các điều kiện ràng buộc: 
+* Công dụng: 
+* Cách sử dụng:
+* Các điều kiện ràng buộc: 
 ### Form Tính Tiền 
-
-Công dụng: 
-Cách sử dụng:
-Các điều kiện ràng buộc: 
+* Công dụng: 
+* Cách sử dụng:
+* Các điều kiện ràng buộc: 
 ### Form Báo Cáo
-
-Công dụng: 
-Cách sử dụng:
-Các điều kiện ràng buộc: 
+* Công dụng: 
+* Cách sử dụng:
+* Các điều kiện ràng buộc: 
 
