@@ -1,7 +1,10 @@
 # 4305-FOSSD-Project
 * **Đồ án môn học Phát triển phần mềm mã nguồn mở**
 
-# Phần mềm quản lý quán cà phê Tôm Tít
+# Phần mềm quản lý quán cà phê Tôm Tít 
+<p align="center">
+  <img width="350" height="300" src="https://raw.githubusercontent.com/TeamworkTCU/4305-FOSSD-Project/master/logo.ico">
+</p>                
 
 Ngày nay, CNTT đã và đang đóng vai trò quan trọng trong đời sống kinh tế, xã hội của nhiều quốc gia trên thế giới, là một phần không thể thiếu trong xã hội năng động, ngày càng hiện đại hoá. Vì vậy, việc tin học hoá vào một số lĩnh vực là hoàn toàn có thể và phù hợp với xu hướng hiện nay.
 Xuất phát từ nhu cầu thực tế đó, trong công việc kinh doanh, bán hàng của chủ quán cà phê Tôm Tít, việc quản lý hệ thống thông tin bán hàng là một việc không thể thiếu. Nhằm thay thế một số công việc mà trước đó phải thao tác bằng tay trên giấy tờ đạt hiệu quả không cao, mất nhiều thời gian. Vì vậy, chúng em đã chọn thực hiện xây dựng một phần mềm được viết bằng ngôn ngữ C# kết nối với hệ quản trị CSDL MS SQL Server với đề tài “Xây dựng phần mềm quản lý quán cà phê Tôm Tít”.
@@ -94,6 +97,17 @@ Chúng tôi dùng [Git](https://git-scm.com/) để tổ chức quản lý phiê
 ## Giấy phép
 
 Đồ án này được cấp phép theo giấy phép của General Public License - xem file [LICENSE.md](LICENSE.md) để biết thêm chi tiết.
+
+## Tài liệu cho người dùng cuối
+
+Mời các bạn [Click đây để xem tài liệu cho người dùng cuối](https://github.com/TeamworkTCU/4305-FOSSD-Project/blob/Phuc/T%C3%A0i%20Li%E1%BB%87u%20cho%20ng%C6%B0%E1%BB%9Di%20d%C3%B9ng%20cu%E1%BB%91i.md)
+
+## Tài liệu cho nhà phát triển
+Mời các bạn [Click đây để xem tài liệu cho nhà phát triển](https://github.com/TeamworkTCU/4305-FOSSD-Project/blob/master/T%C3%A0i%20li%E1%BB%87u%20cho%20nh%C3%A0%20ph%C3%A1t%20tri%E1%BB%83n.md
+)
+
+## Tài liệu thiết kế
+Mời các bạn [Click đây để xem tài liệu thiết kế]()
 
 ## Lời cảm ơn
 
