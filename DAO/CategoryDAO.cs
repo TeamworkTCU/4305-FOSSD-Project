@@ -20,6 +20,8 @@ namespace QuanLyQuanCafe.DAO
 
         private CategoryDAO() { }
 
+        /// Hàm lấy danh mục thức ăn
+        
         public List<Category> GetListCategory()
         {
             List<Category> list = new List<Category>();
@@ -36,6 +38,8 @@ namespace QuanLyQuanCafe.DAO
 
             return list;
         }
+        
+
 
         public List<Category> GetListFoodCategory()
         {
@@ -71,6 +75,9 @@ namespace QuanLyQuanCafe.DAO
             return category;
         }
 
+        
+        // Thêm danh mục
+        
         public bool InsertCategory(string name)
         {
             string query = string.Format("INSERT dbo.FoodCategory (name)  VALUES  ( N'{0}')", name);
@@ -79,6 +86,8 @@ namespace QuanLyQuanCafe.DAO
             return result > 0;
         }
 
+        // Sửa danh mục
+        
         public bool UpdateCategory(string name, int id)
         {
             string query = string.Format("UPDATE dbo.FoodCategory SET name = N'{0}' WHERE id = {1}", name, id);
@@ -86,6 +95,8 @@ namespace QuanLyQuanCafe.DAO
 
             return result > 0;
         }
+        
+        // Xóa danh mục
 
         public bool DeleteCategory(int id)
         {
