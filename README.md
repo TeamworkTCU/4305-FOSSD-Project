@@ -108,7 +108,7 @@ Mời các bạn [Click đây để xem tài liệu cho nhà phát triển](http
 )
 
 ## Tài liệu thiết kế
-Mời các bạn [Click đây để xem tài liệu thiết kế]()
+Mời các bạn [Click đây để xem tài liệu thiết kế](https://github.com/TeamworkTCU/4305-FOSSD-Project/blob/master/TailieuThietke.md)
 
 
 ## Lời cảm ơn
