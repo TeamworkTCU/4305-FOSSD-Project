@@ -98,6 +98,7 @@ Chúng tôi dùng [Git](https://git-scm.com/) để tổ chức quản lý phiê
 
 Đồ án này được cấp phép theo giấy phép của General Public License - xem file [LICENSE.md](LICENSE.md) để biết thêm chi tiết.
 
+
 ## Tài liệu cho người dùng cuối
 
 Mời các bạn [Click đây để xem tài liệu cho người dùng cuối](https://github.com/TeamworkTCU/4305-FOSSD-Project/blob/Phuc/T%C3%A0i%20Li%E1%BB%87u%20cho%20ng%C6%B0%E1%BB%9Di%20d%C3%B9ng%20cu%E1%BB%91i.md)
@@ -108,6 +109,7 @@ Mời các bạn [Click đây để xem tài liệu cho nhà phát triển](http
 
 ## Tài liệu thiết kế
 Mời các bạn [Click đây để xem tài liệu thiết kế]()
+
 
 ## Lời cảm ơn
 
