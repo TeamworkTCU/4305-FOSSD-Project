@@ -20,6 +20,8 @@ namespace QuanLyQuanCafe.DAO
 
         private MenuDAO() { }
 
+        // Hàm lấy danh sách menu
+        
         public List<Menu> GetListMenuByTable(int id)
         {
             List<Menu> listMenu = new List<Menu>();

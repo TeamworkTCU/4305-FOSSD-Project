@@ -23,10 +23,14 @@ namespace QuanLyQuanCafe.DAO
 
         private TableDAO() { }
 
+        // Hàm chuyển bàn
+        
         public void SwitchTable(int id1, int id2)
         {
             DataProvider.Instance.ExecuteQuery("USP_SwitchTabel @idTable1 , @idTabel2", new object[] { id1, id2 });
         }
+        
+        // Hàm lấy danh sách bàn
 
         public List<Table> GetListTable()
         {
@@ -44,6 +48,8 @@ namespace QuanLyQuanCafe.DAO
             return list;
         }
 
+        Hàm load danh sách bàn
+        
         public List<Table> LoadTableList()
         {
             List<Table> tableList = new List<Table>();
@@ -58,6 +64,8 @@ namespace QuanLyQuanCafe.DAO
 
             return tableList;
         }
+        
+        // Hàm thêm bàn
 
         public bool InsertTable(string name, string status)
         {
@@ -67,6 +75,8 @@ namespace QuanLyQuanCafe.DAO
             return result > 0;
         }
 
+        // Hàm sửa bàn
+        
         public bool UpdateTable(string name, int id)
         {
             string query = string.Format("UPDATE dbo.TableFood SET name = N'{0}' WHERE id = {1}", name, id);
@@ -75,6 +85,8 @@ namespace QuanLyQuanCafe.DAO
             return result > 0;
         }
 
+        // Hàm xóa bàn
+        
         public bool DeleteTable(int id)
         {
             BillInfoDAO.Instance.DeleteBillInfoByFoodID(id);

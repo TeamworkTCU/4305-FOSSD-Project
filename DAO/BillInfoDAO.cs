@@ -25,7 +25,8 @@ namespace QuanLyQuanCafe.DAO
             DataProvider.Instance.ExecuteQuery("delete dbo.BillInfo WHERE idFood = " + id);
         }
 
-
+/// Hàm lấy danh sách hóa đơn
+        
         public List<BillInfo> GetListBillInfo(int id)
         {
             List<BillInfo> listBillInfo = new List<BillInfo>();
@@ -40,6 +41,8 @@ namespace QuanLyQuanCafe.DAO
 
             return listBillInfo;
         }
+        
+       // Hàm thêm chi tiết hóa đơn
 
         public void InsertBillInfo(int idBill, int idFood, int count)
         {
