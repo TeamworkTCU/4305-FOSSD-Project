@@ -98,13 +98,19 @@ Chúng tôi dùng [Git](https://git-scm.com/) để tổ chức quản lý phiê
 
 Đồ án này được cấp phép theo giấy phép của General Public License - xem file [LICENSE.md](LICENSE.md) để biết thêm chi tiết.
 
-## Tài Liệu cho người dùng cuối
+
+## Tài liệu cho người dùng cuối
 
 Mời các bạn [Click đây để xem tài liệu cho người dùng cuối](https://github.com/TeamworkTCU/4305-FOSSD-Project/blob/Phuc/T%C3%A0i%20Li%E1%BB%87u%20cho%20ng%C6%B0%E1%BB%9Di%20d%C3%B9ng%20cu%E1%BB%91i.md)
 
-## Tài Liệu cho nhà phát triển
+## Tài liệu cho nhà phát triển
 Mời các bạn [Click đây để xem tài liệu cho nhà phát triển](https://github.com/TeamworkTCU/4305-FOSSD-Project/blob/master/T%C3%A0i%20li%E1%BB%87u%20cho%20nh%C3%A0%20ph%C3%A1t%20tri%E1%BB%83n.md
 )
+
+## Tài liệu thiết kế
+Mời các bạn [Click đây để xem tài liệu thiết kế]()
+
+
 ## Lời cảm ơn
 
 Để hoàn thành tốt đề tài này chúng em xin cảm ơn thầy Mai Cường Thọ – giảng viên khoa CNTT Trường Đại học Nha Trang cùng các thầy cô bộ môn Kỹ thuật phần mềm đã tạo điều kiện cho chúng em nghiên cứu và hoàn thành đề tài. Một lần nữa chúng em xin trân trọng cảm ơn thầy Mai Cường Thọ đã tận tình giúp đỡ, hướng dẫn chúng em trong suốt quá trình thực hiện đề tài.
