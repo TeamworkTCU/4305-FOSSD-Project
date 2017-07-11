@@ -79,3 +79,6 @@ Commit message này sẽ tự động đánh dấu issue #3 là closed khi pull 
 Đừng suy nghĩ rằng cách duy nhất bạn có thể hợp tác là thông qua pull request. Thông thường, các dự án mã nguồn mở lớn được hưởng lợi từ nhiều cách thức hợp tác trong công việc. Ví dụ, một dự án như Ruby on Rails đã có tiếng trong cộng đồng của nó; đây là nơi các câu hỏi được trả lời trên forum và trong IRC chatroom giúp cho việc xây dựng các kiến thức về framework, và cũng định hướng cho framework tương lai bằng cách nói về các ý tưởng và các uncovering bugs.
 
 Các kênh của việc hợp tác thường được mở ra như một môi trường hỗ trợ, chẳng hạn như forums và chatrooms. Cũng có thể có các email chains, meetups, hoặc các conference calls giúp cho việc định hướng project và tạo ra một cộng đồng sôi nổi, hữu ích. Nếu không có những cộng đồng thế này, hiệu quả của pull request là rất thấp.
+
+Tài liệu này được tạo bởi [Nguyễn Đức Tiến], phiên bản 1.0.
+
