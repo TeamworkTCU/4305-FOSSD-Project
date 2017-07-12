@@ -263,14 +263,6 @@ GO
 UPDATE dbo.Bill SET status = 1 WHERE id = 1
 
 USE QuanLyQuanCafe
-DELETE dbo.BillInfo
-GO
-
-USE QuanLyQuanCafe
-DELETE dbo.Bill
-GO
-
-USE QuanLyQuanCafe
 GO
 CREATE TRIGGER UTG_UpdateBillInfo
 ON dbo.BillInfo FOR INSERT, UPDATE
