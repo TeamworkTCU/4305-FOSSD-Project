@@ -20,6 +20,8 @@ namespace QuanLyQuanCafe.DAO
 
         private FoodDAO() { }
 
+        // Hàm lấy món từ danh mục
+        
         public List<Food> GetFoodByCategoryID(int id)
         {
             List<Food> list = new List<Food>();
@@ -36,6 +38,8 @@ namespace QuanLyQuanCafe.DAO
 
             return list;
         }
+        
+        // Hàm lấy danh sách món
 
         public List<Food> GetListFood()
         {
@@ -53,6 +57,8 @@ namespace QuanLyQuanCafe.DAO
 
             return list;
         }
+        
+        // Hàm tìm kiếm món
 
         public List<Food> SearchFoodByName(string name)
         {
@@ -70,6 +76,8 @@ namespace QuanLyQuanCafe.DAO
 
             return list;
         }
+        
+        // Hàm thêm món
 
         public bool InsertFood(string name, int id, float price)
         {
@@ -78,6 +86,8 @@ namespace QuanLyQuanCafe.DAO
 
             return result > 0;
         }
+        
+        // Hàm sửa món
 
         public bool UpdateFood(int idFood, string name, int id, float price)
         {
@@ -87,6 +97,8 @@ namespace QuanLyQuanCafe.DAO
             return result > 0;
         }
 
+        // Hàm xóa món
+        
         public bool DeleteFood(int idFood)
         {
             BillInfoDAO.Instance.DeleteBillInfoByFoodID(idFood);

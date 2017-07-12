@@ -21,6 +21,8 @@ namespace QuanLyQuanCafe.DAO
 
         private AccountDAO() { }
 
+        // Hàm mã hóa mật khẩu MD5
+        
         public bool Login(string userName, string passWord)
         {
             byte[] temp = ASCIIEncoding.ASCII.GetBytes(passWord);
@@ -42,6 +44,8 @@ namespace QuanLyQuanCafe.DAO
             return result.Rows.Count > 0;
         }
 
+        // Hàm sửa thông tin tài khoản
+        
         public bool UpdateAccount(string userName, string displayName, string pass, string newPass)
         {
             int result = DataProvider.Instance.ExecuteNonQuery("exec USP_UpdateAccount @userName , @displayName , @password , @newPassword", new object[] { userName, displayName, pass, newPass });
@@ -66,6 +70,8 @@ namespace QuanLyQuanCafe.DAO
             return null;
         }
 
+        // Hàm thêm tài khoản
+        
         public bool InsertAccount(string name, string displayName, int type)
         {
             string query = string.Format("INSERT dbo.Account ( UserName, DisplayName, Type, password )VALUES  ( N'{0}', N'{1}', {2}, N'{3}')", name, displayName, type, "1962026656160185351301320480154111117132155");
@@ -74,6 +80,8 @@ namespace QuanLyQuanCafe.DAO
             return result > 0;
         }
 
+        // Hàm sửa tài khoản
+        
         public bool UpdateAccount(string name, string displayName, int type)
         {
             string query = string.Format("UPDATE dbo.Account SET DisplayName = N'{1}', Type = {2} WHERE UserName = N'{0}'", name, displayName, type);
@@ -82,6 +90,8 @@ namespace QuanLyQuanCafe.DAO
             return result > 0;
         }
 
+        // Hàm xóa tài khoản
+        
         public bool DeleteAccount(string name)
         {
             string query = string.Format("Delete Account where UserName = N'{0}'", name);
@@ -90,6 +100,8 @@ namespace QuanLyQuanCafe.DAO
             return result > 0;
         }
 
+        // Hàm reset mật khẩu
+        
         public bool ResetPassword(string name)
         {
             string query = string.Format("update account set password = N'1962026656160185351301320480154111117132155' where UserName = N'{0}'", name);

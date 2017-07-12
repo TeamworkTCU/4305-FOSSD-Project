@@ -17,7 +17,9 @@ namespace QuanLyQuanCafe.DAO
             get { if (instance == null) instance = new DataProvider(); return DataProvider.instance; }
             private set { DataProvider.instance = value; }
         }
-
+        
+        //Khai báo chuỗi kết nối
+        
         private DataProvider() { }
 
         private string connectionSTR = "Data Source=DESKTOP-J4V4QOK;Initial Catalog=QuanLyQuanCafe;Integrated Security=True";
@@ -56,6 +58,8 @@ namespace QuanLyQuanCafe.DAO
             return data;
         }
 
+        //Khai báo hàm truy xuất đến CSDL
+        
         public int ExecuteNonQuery(string query, object[] parameter = null)
         {
             int data = 0;
