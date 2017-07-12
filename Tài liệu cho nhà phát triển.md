@@ -16,8 +16,9 @@ Hiện tại, ở Phiên Bản đầu tiên, với 2 Contribute chính là Phúc
 *	Và còn một số nhược điểm mà tùy theo người sử dụng, bạn có thể sử dụng phiên bản này để trải nghiệm và tự phát triển chức năng theo riêng mình.
 
 ###	Làm sao để phát triển phần mềm này???
-
-Đầu tiên các bạn cần trang bị cho mình những kiến thức như sau:
+* Đầu Tiên xin mời xem Phân Tích Thiết kế hệ thống của nhóm [Thiết kế hệ thống](https://github.com/TeamworkTCU/4305-FOSSD-Project/blob/master/TailieuThietke.md)
+* Tiếp Theo là [Tài liệu cho người dùng cuối](https://github.com/TeamworkTCU/4305-FOSSD-Project/blob/Phuc/T%C3%A0i%20Li%E1%BB%87u%20cho%20ng%C6%B0%E1%BB%9Di%20d%C3%B9ng%20cu%E1%BB%91i.md)
+* Cuối cùng các bạn cần trang bị cho mình những kiến thức như sau:
 
 ####	Phân tích thiết kế hệ thống
 
@@ -65,5 +66,4 @@ Hiện tại, ở Phiên Bản đầu tiên, với 2 Contribute chính là Phúc
 *		http://www.cncaptech.edu.vn/tin-tuc/tin-tuc.php?id=12153-4-Quy-tac-viet-code-trong-lap-trinh
 *		**https://www.smashingmagazine.com/2013/01/starting-an-open-source-project/
 
-
-
+Nếu có bất cứ thắc mắc nào xin vui lòng liên hệ với người quản trị qua email:    phuccoi996@gmail.com
