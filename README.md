@@ -42,22 +42,10 @@ Chúng tôi dùng [Git](https://git-scm.com/) để tổ chức quản lý phiê
 
 Đưa ra các quy ước khi coding với ngôn ngữ lập trình C#, với các quy tắc này giúp tiết kiệm thời gian rất lớn trong tiến trình phát triển phần mềm và cả trong quá trình bảo trì sản phẩm. Giúp sinh viên quen với làm việc theo nhóm.
 Tài liệu này chủ yếu hướng dẫn sinh viên với ngôn ngữ lập trình C#, nhưng có rất nhiều quy tắc được sử dụng trong nhiều ngôn ngữ lập trình khác tích hợp trong bộ công cụ Visual Studio .NET.
-Phạm vi áp dụng:
+* Phạm vi áp dụng:
 
 Những lập trình viên tham gia dự án phát triển bằng ngôn ngữ C# và công cụ Visual Studio .Net.
-
-Định nghĩa và những từ viết tắt:
-
-Ký pháp Hungarian là cách quy định đặt tên biến như sau: bắt đầu tên biến thì viết chữ thường và các chữ đầu thể hiện kiểu dữ liệu của biến, và được gọi là các tiền tố
-
-* Tài liệu liên quan
-
-https://msdn.microsoft.com/en-us/library/ff926074.aspx
-http://www.dofactory.com/reference/csharp-coding-standards
-http://se.inf.ethz.ch/old/teaching/ss2007/251-0290-00/project/CSharpCodingStandards.pdf
-
-### Một số lưu ý trong cách đặt tên cho các thành phần 
-* (xem thêm tại [ChuanLapTrinh.md](https://github.com/TeamworkTCU/4305-FOSSD-Project/blob/master/Documents/Chuan%20Lap%20Trinh.md) )
+* CHI TIẾT VỀ CHUẨN LẬP TRÌNH [xin xem tại đây](https://github.com/TeamworkTCU/4305-FOSSD-Project/blob/master/Documents/Chu%E1%BA%A9n%20L%E1%BA%ADp%20Tr%C3%ACnh.md)
 
 ## Triển khai
 
@@ -107,7 +95,7 @@ Vui lòng đọc [Quy_tac_ung_xu.md](https://github.com/TeamworkTCU/4305-FOSSD-P
 Mời các bạn [Click đây để xem tài liệu cho người dùng cuối](https://github.com/TeamworkTCU/4305-FOSSD-Project/blob/master/Documents/T%C3%A0i%20Li%E1%BB%87u%20cho%20ng%C6%B0%E1%BB%9Di%20d%C3%B9ng%20cu%E1%BB%91i.md)
 
 ## Tài liệu cho nhà phát triển
-Mời các bạn [Click đây để xem tài liệu cho nhà phát triển](https://github.com/TeamworkTCU/4305-FOSSD-Project/blob/master/Documents/T%C3%A0i%20Li%E1%BB%87u%20D%C3%A0nh%20Cho%20Ng%C6%B0%E1%BB%9Di%20Ph%C3%A1t%20Tri%E1%BB%83n)
+Mời các bạn [Click đây để xem tài liệu cho nhà phát triển](https://github.com/TeamworkTCU/4305-FOSSD-Project/blob/master/Documents/T%C3%A0i%20Li%E1%BB%87u%20D%C3%A0nh%20Cho%20Ng%C6%B0%E1%BB%9Di%20Ph%C3%A1t%20Tri%E1%BB%83n.md)
 
 ## Tài liệu thiết kế
 Mời các bạn [Click đây để xem tài liệu thiết kế](https://github.com/TeamworkTCU/4305-FOSSD-Project/blob/master/Documents/TailieuThietke.md)
