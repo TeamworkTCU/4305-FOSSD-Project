@@ -1,4 +1,4 @@
-# 4305 Đồ án môn học Phát triển phần mềm mã nguồn mở*
+# 4305 Đồ án môn học Phát triển phần mềm mã nguồn mở
 ## THẾ NÀO LÀ CHUẨN LẬP TRÌNH???
 * Mục đích:
 
