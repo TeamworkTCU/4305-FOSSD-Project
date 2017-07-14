@@ -161,3 +161,5 @@ Trên đây là một số qui định về đặt tên biến mà tôi tự t�
 *	C# Coding Standards for .NET 
 
 		http://se.inf.ethz.ch/old/teaching/ss2007/251-0290-00/project/CSharpCodingStandards.pdf
+#### Nếu có bất cứ thắc mắc nào xin vui lòng liên hệ qua email:    phuccoi996@gmail.com
+
