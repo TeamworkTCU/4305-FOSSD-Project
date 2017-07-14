@@ -39,3 +39,6 @@ Do đó ta cần có các kho dữ liệu sau:
  ![](http://i.imgur.com/ofqOjYI.jpg)
 
 Tài liệu này được tạo bởi [Nguyễn Đức Tiến], phiên bản 1.0.
+
+
+Chi tiết liên hệ | 0948.278.451 | ductien96.vn@gmail.com 

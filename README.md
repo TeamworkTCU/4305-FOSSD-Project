@@ -127,7 +127,6 @@ Vui lòng đọc [Dong_gop.md](https://github.com/TeamworkTCU/4305-FOSSD-Project
 
 Vui lòng đọc [Quy_tac_ung_xu.md](https://github.com/TeamworkTCU/4305-FOSSD-Project/blob/master/Documents/Quy_tac_ung_xu.md) để biết thêm chi tiết về quy tắc ứng xử của chúng tôi.
 
-
 ## Tài liệu cho người dùng cuối
 
 Mời các bạn [Click đây để xem tài liệu cho người dùng cuối](https://github.com/TeamworkTCU/4305-FOSSD-Project/blob/master/Documents/T%C3%A0i%20Li%E1%BB%87u%20cho%20ng%C6%B0%E1%BB%9Di%20d%C3%B9ng%20cu%E1%BB%91i.md)

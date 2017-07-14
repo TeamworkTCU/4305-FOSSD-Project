@@ -86,6 +86,8 @@ Thành viên của ban lãnh đạo dự án.
 
 ### Thuộc tính
 
-Quy tắc ứng xử này được điều chỉnh từ [Nguyễn Đức Tiến], phiên bản 1.0
-### Cách đóng góp chi tiết xem tại đây [Chi tiết đóng góp](https://github.com/TeamworkTCU/4305-FOSSD-Project/blob/Tien/CachDongGop.md)
+Quy tắc ứng xử này được điều chỉnh từ [Nguyễn Đức Tiến], phiên bản 1.0. 
+
+Chi tiết liên hệ | 0948.278.451 | ductien96.vn@gmail.com 
+### Cách đóng góp chi tiết xem tại đây [Chi tiết đóng góp](https://github.com/TeamworkTCU/4305-FOSSD-Project/blob/master/Documents/CachDongGop.md)
 
