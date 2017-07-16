@@ -19,8 +19,12 @@ namespace QuanLyQuanCafe.DAO
         }
 
         private MenuDAO() { }
-
-        // Hàm lấy danh sách menu
+        
+         /**
+        *Hàm lấy danh sách menu
+        *@param listMenu @List[Menu]   
+        *@return listMenu
+        */
         
         public List<Menu> GetListMenuByTable(int id)
         {
