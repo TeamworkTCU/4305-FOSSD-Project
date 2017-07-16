@@ -23,18 +23,23 @@ namespace QuanLyQuanCafe.DAO
 
         private TableDAO() { }
 
-	        /**
+
+         /**
         * Hàm chuyển bàn
-        *@param id1 @id1
-        *@param id2 @id2 
+        *@param id1 @idTable1 [Table 1]
+        *@param id2 @idTable2 [Table 2]      
+        *@return result
         */
         public void SwitchTable(int id1, int id2)
         {
             DataProvider.Instance.ExecuteQuery("USP_SwitchTabel @idTable1 , @idTabel2", new object[] { id1, id2 });
         }
         
-	        /**
+       
+        /**
         * Hàm lấy danh sách bàn
+        *@param table @tablelist [Table List]    
+        *@return tablelist
         */
         public List<Table> GetListTable()
         {
@@ -52,10 +57,13 @@ namespace QuanLyQuanCafe.DAO
             return list;
         }
 
-        
-        	        /**
+               
+        /**
         * Hàm load danh sách bàn
+        *@param table @tablelist [Table List]    
+        *@return tablelist
         */
+        
         public List<Table> LoadTableList()
         {
             List<Table> tableList = new List<Table>();
@@ -70,13 +78,15 @@ namespace QuanLyQuanCafe.DAO
 
             return tableList;
         }
-
-	        /**
-        *  Hàm thêm bàn
-        *@param name @name
-        *@param status @status 
+        
+               
+        /**
+        * Hàm thêm bàn
+        *@param name @name [Table Name]    
+        *@param status @status [Table Status]    
         *@return result
         */
+
         public bool InsertTable(string name, string status)
         {
             string query = string.Format("INSERT dbo.TableFood (name, status)  VALUES  ( N'{0}', N'{1}')", name, status);
@@ -85,12 +95,14 @@ namespace QuanLyQuanCafe.DAO
             return result > 0;
         }
 
-	        /**
+        /**
         * Hàm sửa bàn
-        *@param name @name
-        *@param id @id 
+        *@param name @name [Table Name]    
+        *@param id @id [Table ID]    
         *@return result
         */
+
+        
         public bool UpdateTable(string name, int id)
         {
             string query = string.Format("UPDATE dbo.TableFood SET name = N'{0}' WHERE id = {1}", name, id);
@@ -99,11 +111,13 @@ namespace QuanLyQuanCafe.DAO
             return result > 0;
         }
 
-	        /**
-        *  Hàm xóa bàn
-        *@param id @id 
+        /**
+        * Hàm xóa bàn
+        *@param id @id [Table ID]    
         *@return result
         */
+
+        
         public bool DeleteTable(int id)
         {
             BillInfoDAO.Instance.DeleteBillInfoByFoodID(id);
