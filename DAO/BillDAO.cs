@@ -36,32 +36,56 @@ namespace QuanLyQuanCafe.DAO
 
             return -1;
         }
-
+	     /**
+        * Hàm Check_out
+        *@param id @id
+        *@param discount @discount 
+        *@param totalPrice @totalPrice
+        */
         public void CheckOut(int id, int discount, float totalPrice)
         {
             string query = "UPDATE dbo.Bill SET dateCheckOut = GETDATE(), status = 1, " + "discount = " + discount + ", totalPrice = " + totalPrice + " WHERE id = " + id;
             DataProvider.Instance.ExecuteNonQuery(query);
         }
+	     /**
+        * Hàm InsertBill
+        *@param id @id
+        */
         public void InsertBill(int id)
         {
             DataProvider.Instance.ExecuteNonQuery("exec USP_InsertBill @idTable", new object[] { id });
         }
-
+	     /**
+        * Hàm GetBillListByDate
+        *@param DateTime @DateTime
+        *@param checkOut @checkOut 
+        */
         public DataTable GetBillListByDate(DateTime checkIn, DateTime checkOut)
         {
             return DataProvider.Instance.ExecuteQuery("exec USP_GetListBillByDate @checkIn , @checkOut", new object[] { checkIn, checkOut });
         }
-
+	     /**
+        * Hàm GetBillListByDateAndPage
+        *@param checkIn @checkIn
+        *@param checkOut @checkOut 
+        *@param pageNum @pageNum
+        */
         public DataTable GetBillListByDateAndPage(DateTime checkIn, DateTime checkOut, int pageNum)
         {
             return DataProvider.Instance.ExecuteQuery("exec USP_GetListBillByDateAndPage @checkIn , @checkOut , @page", new object[] { checkIn, checkOut, pageNum });
         }
-
+	     /**
+        * Hàm GetNumBillListByDate
+        *@param DateTime @DateTime
+        *@param checkOut @checkOut 
+        */
         public int GetNumBillListByDate(DateTime checkIn, DateTime checkOut)
         {
             return (int)DataProvider.Instance.ExecuteScalar("exec USP_GetNumBillByDate @checkIn , @checkOut", new object[] { checkIn, checkOut });
         }
-
+	     /**
+        * Hàm GetMaxIDBill
+        */
         public int GetMaxIDBill()
         {
             try
