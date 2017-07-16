@@ -20,8 +20,14 @@ namespace QuanLyQuanCafe.DAO
 
         private DataProvider() { }
 
+        
+        // Hàm khai báo chuỗi kết nối
+        
         private string connectionSTR = "Data Source=DESKTOP-J4V4QOK;Initial Catalog=QuanLyQuanCafe;Integrated Security=True";
 
+        
+        // Hàm hiện thị dữ liệu lên DataTable
+        
         public DataTable ExecuteQuery(string query, object[] parameter = null)
         {
             DataTable data = new DataTable();
@@ -56,6 +62,7 @@ namespace QuanLyQuanCafe.DAO
             return data;
         }
 
+        //Phương thức thực thi query
         public int ExecuteNonQuery(string query, object[] parameter = null)
         {
             int data = 0;
@@ -88,6 +95,7 @@ namespace QuanLyQuanCafe.DAO
             return data;
         }
 
+        // Phương thức thực thi query
         public object ExecuteScalar(string query, object[] parameter = null)
         {
             object data = 0;
