@@ -1,5 +1,4 @@
-// Tạo CSDL QuanLyQuanCafe
-CREATE DATABASE QuanLyQuanCafe
+﻿CREATE DATABASE QuanLyQuanCafe
 GO
 
 USE QuanLyQuanCafe
@@ -12,7 +11,10 @@ GO
 -- Bill
 -- BillInfo
 
-// Tạo bảng TableFood
+
+        /**
+        * Tạo bảng TableFood
+        */
 CREATE TABLE TableFood
 (
     id INT IDENTITY PRIMARY KEY,
@@ -20,8 +22,9 @@ CREATE TABLE TableFood
     status NVARCHAR(100) NOT NULL  DEFAULT N'Trống' --Trống || Có người
 )
 GO
-
-// Tạo bảng Account
+        /**
+        * Tạo bảng Account
+        */
 CREATE TABLE Account
 (   
     UserName NVARCHAR(100) NOT NULL PRIMARY KEY,
@@ -30,16 +33,18 @@ CREATE TABLE Account
     Type INT  NOT NULL DEFAULT 0 -- 1: admin && 0: staff
 )
 GO
-
-// Tạo bảng FoodCategory
+        /**
+        * Tạo bảng FoodCategory
+        */
 CREATE TABLE FoodCategory
 (
     id INT IDENTITY PRIMARY KEY,
     name NVARCHAR(100) NOT NULL DEFAULT N'Chưa đặt tên',
 )
 GO
-
-// Tạo bảng Food
+        /**
+        * Tạo bảng Food
+        */
 CREATE TABLE Food
 (
     id INT IDENTITY PRIMARY KEY,
@@ -49,8 +54,9 @@ CREATE TABLE Food
     FOREIGN KEY (idCategory) REFERENCES dbo.FoodCategory(id)
 )
 GO
-
-// Tạo bảng Bill
+        /**
+        * Tạo bảng Bill
+        */
 CREATE TABLE Bill
 (
     id INT IDENTITY PRIMARY KEY,
@@ -61,8 +67,9 @@ CREATE TABLE Bill
     FOREIGN KEY (idTable) REFERENCES dbo.TableFood(id)
 )
 GO
-
-// Tạo bảng BillInfo
+        /**
+        * Tạo bảng BillInfo
+        */
 CREATE TABLE BillInfo
 (
     id INT IDENTITY PRIMARY KEY,
@@ -75,8 +82,9 @@ CREATE TABLE BillInfo
 GO
 
 USE QuanLyQuanCafe
-
-// Nhập dữ liệu vào bảng Account
+        /**
+        * Thêm dữ liệu vào bảng Account
+        */
 INSERT INTO dbo.Account
     (
     UserName,
@@ -84,20 +92,12 @@ INSERT INTO dbo.Account
     PassWord,
     Type
     )
-VALUES (N'admin', N'Nguyễn Đức Tiến', N'123', 1)
-
-INSERT INTO dbo.Account
-    (
-    UserName,
-    DisplayName,
-    PassWord,
-    Type
-    )
-VALUES (N'staff', N'Trần Thị Ngọc Trinh', N'123', 0)
+VALUES (N'admin', N'Nguyễn Đức Tiến', N'123', 1);
+VALUES (N'staff', N'Trần Thị Ngọc Trinh', N'123', 0);
 GO
-
-// Tạo PROC USP_GetAccountByUserName
-
+        /**
+        * Tạo thủ tục USP_GetAccountByUserName
+        */
 CREATE PROC USP_GetAccountByUserName
 @userName nvarchar(100)
 AS
@@ -108,7 +108,9 @@ GO
 
 EXEC dbo.USP_GetAccountByUserName @userName = N'admin'
 GO
-// Tạo PROC USP_Login
+        /**
+        * Tạo thủ tục USP_Login
+        */
 CREATE PROC USP_Login
 @userName nvarchar(100),
 @passWord nvarchar(100)
@@ -127,7 +129,9 @@ BEGIN
 END
 GO
 
-// Tạo PROC USP_GetTableList
+        /**
+        * Tạo thủ tục USP_GetTableList
+        */
 CREATE PROC USP_GetTableList
 AS SELECT * FROM dbo.TableFood
 GO
@@ -135,7 +139,9 @@ GO
 EXEC DBO.USP_GetTableList
 GO
 
-// Tạo PROC USP_InsertBill
+        /**
+        * Tạo thủ tục USP_InsertBill
+        */
 CREATE PROC USP_InsertBill
 @idTable INT
 AS
@@ -155,8 +161,9 @@ BEGIN
             )
 END
 GO
-
-// Tạo PROC USP_InsertBillInfo
+        /**
+        * Tạo thủ tục USP_InsertBillInfo
+        */
 CREATE PROC USP_InsertBillInfo
 @idBill INT, @idFood INT, @count INT
 AS
@@ -190,22 +197,27 @@ END
 GO
 
 USE QuanLyQuanCafe
--- thêm category
+        /**
+        * Thêm dữ liệu vào bảng FoodCategory
+        */
 INSERT dbo.FoodCategory (name)  VALUES  ( N'Cà phê' )
 INSERT dbo.FoodCategory (name)  VALUES  ( N'Nước ép trái cây' )
 INSERT dbo.FoodCategory (name)  VALUES  ( N'Sinh tố' )
 INSERT dbo.FoodCategory (name)  VALUES  ( N'Món ăn nhẹ' )
 
-
--- thêm món ăn
--- cafe
+        /**
+        * Thêm dữ liệu vào bảng Food - Cà phê
+        */
 INSERT dbo.Food ( name, idCategory, price ) VALUES  ( N'Cà phê đen nóng', 1, 10000)
 INSERT dbo.Food ( name, idCategory, price ) VALUES  ( N'Cà phê đen đá', 1, 12000)
 INSERT dbo.Food ( name, idCategory, price ) VALUES  ( N'Cà phê sữa nóng', 1, 12000)
 INSERT dbo.Food ( name, idCategory, price ) VALUES  ( N'Cà phê sữa đá', 1, 14000)
 INSERT dbo.Food ( name, idCategory, price ) VALUES  ( N'Bạc sỉu', 1, 20000)
 
--- nước ép
+        /**
+        * Thêm dữ liệu vào bảng Food - Nước Ép
+        */
+        
 INSERT dbo.Food ( name, idCategory, price ) VALUES  ( N'Dứa ép', 2, 20000)
 INSERT dbo.Food ( name, idCategory, price ) VALUES  ( N'Dưa hấu ép', 2, 20000)
 INSERT dbo.Food ( name, idCategory, price ) VALUES  ( N'Cam ép', 2, 25000)
@@ -223,8 +235,10 @@ INSERT dbo.Food ( name, idCategory, price ) VALUES  ( N'Nước mơ', 2, 20000)
 INSERT dbo.Food ( name, idCategory, price ) VALUES  ( N'Nước chanh', 2, 20000)
 INSERT dbo.Food ( name, idCategory, price ) VALUES  ( N'Yaourt đá', 2, 20000)
 
-
--- sinh tố
+        /**
+        * Thêm dữ liệu vào bảng Food - sinh tố
+        */
+        
 INSERT dbo.Food ( name, idCategory, price ) VALUES  ( N'Sinh tố xoài', 3, 25000)
 INSERT dbo.Food ( name, idCategory, price ) VALUES  ( N'Sinh tố bơ', 3, 30000)
 INSERT dbo.Food ( name, idCategory, price ) VALUES  ( N'Sinh tố đu đủ', 3, 25000)
@@ -239,7 +253,10 @@ INSERT dbo.Food ( name, idCategory, price ) VALUES  ( N'Sinh tố dừa + Sữa 
 INSERT dbo.Food ( name, idCategory, price ) VALUES  ( N'Sinh tố mẵng cầu', 3, 25000)
 INSERT dbo.Food ( name, idCategory, price ) VALUES  ( N'Sinh tố chanh dây', 3, 25000)
 
--- fastfood
+        /**
+        * Thêm dữ liệu vào bảng Food - FastFood
+        */
+        
 INSERT dbo.Food ( name, idCategory, price ) VALUES  ( N'Hamburger gà', 4, 35000)
 INSERT dbo.Food ( name, idCategory, price ) VALUES  ( N'Sandwich trứng + phomai', 4, 35000)
 INSERT dbo.Food ( name, idCategory, price ) VALUES  ( N'Khoai tây chiên', 4, 20000)
@@ -253,7 +270,9 @@ INSERT dbo.Food ( name, idCategory, price ) VALUES  ( N'Bánh Tiramisu', 4, 4000
 INSERT dbo.Food ( name, idCategory, price ) VALUES  ( N'Bánh Lamington', 4, 40000)
 
 
--- thêm bill
+        /**
+        * Thêm dữ liệu vào bảng Bill 
+        */
 INSERT  dbo.Bill ( DateCheckIn , DateCheckOut , idTable , status ) VALUES  ( GETDATE() , NULL , 3 , 0 )
 INSERT  dbo.Bill ( DateCheckIn , DateCheckOut , idTable , status ) VALUES  ( GETDATE() , NULL , 4 , 0 )
 INSERT  dbo.Bill ( DateCheckIn , DateCheckOut , idTable , status ) VALUES  ( GETDATE() , NULL , 5 , 0 )
@@ -262,7 +281,10 @@ INSERT  dbo.Bill ( DateCheckIn , DateCheckOut , idTable , status ) VALUES  ( GET
 GO
 
 USE QuanLyQuanCafe
--- thêm bill info
+
+        /**
+        * Thêm dữ liệu vào bảng BillInfo 
+        */
 INSERT  dbo.BillInfo ( idBill, idFood, count ) VALUES  ( 1, 1, 2 )
 INSERT  dbo.BillInfo ( idBill, idFood, count ) VALUES  ( 1, 3, 4 )
 INSERT  dbo.BillInfo ( idBill, idFood, count ) VALUES  ( 1, 5, 1 )
@@ -276,6 +298,10 @@ UPDATE dbo.Bill SET status = 1 WHERE id = 1
 
 USE QuanLyQuanCafe
 GO
+
+        /**
+        * Tạo Trigger UTG_UpdateBillInfo
+        */
 CREATE TRIGGER UTG_UpdateBillInfo
 ON dbo.BillInfo FOR INSERT, UPDATE
 AS
@@ -315,6 +341,9 @@ GO
 
 USE QuanLyQuanCafe
 GO
+        /**
+        * Tạo Trigger UTG_UpdateBillInfo
+        */
 CREATE TRIGGER UTG_UpdateBill
 ON dbo.Bill FOR UPDATE
 AS
@@ -337,14 +366,18 @@ END
 GO
 
 USE QuanLyQuanCafe
+        /**
+        * Thêm discount vào bảng BILL
+        */
 CREATE TABLE dbo.Bill
 ADD discount INT
 
 
 UPDATE dbo.Bill SET discount = 0
 GO
-
-//Tạo PROC USP_SwitchTabel
+        /**
+        * Tạo Thủ tục USP_SwitchTabel
+        */
 CREATE PROC USP_SwitchTabel
 @idTable1 INT, @idTable2 int
 AS BEGIN
@@ -428,7 +461,10 @@ AS BEGIN
 END
 GO
 
-// Tạo PROC USP_GetListBillByDate
+        /**
+        * Tạo Thủ tục USP_GetListBillByDate
+        */
+        
 CREATE PROC USP_GetListBillByDate
 @checkIn date, @checkOut date
 AS
@@ -440,7 +476,9 @@ BEGIN
 END
 GO
 
-// Tạo PROC USP_UpdateAccount
+        /**
+        * Tạo Thủ tục USP_UpdateAccount
+        */
 CREATE PROC USP_UpdateAccount
 @userName NVARCHAR(100), @displayName NVARCHAR(100), @password NVARCHAR(100), @newPassword NVARCHAR(100)
 AS
@@ -463,7 +501,9 @@ GO
 
 USE QuanLyQuanCafe
 GO
-// Tạo TRIGGER UTG_DeleteBillInfo
+        /**
+        * Tạo Trigger UTG_DeleteBillInfo
+        */
 CREATE TRIGGER UTG_DeleteBillInfo
 ON dbo.BillInfo FOR DELETE
 AS 
@@ -489,8 +529,9 @@ GO
 
 USE QuanLyQuanCafe
 GO
-
-//Tạo PROC USP_GetListBillByDateAndPage
+        /**
+        * Tạo thủ tục USP_GetListBillByDateAndPage
+        */
 CREATE PROC USP_GetListBillByDateAndPage
 @checkIn date, @checkOut date, @page int
 AS 
@@ -510,7 +551,9 @@ GO
 
 USE QuanLyQuanCafe
 GO
-//Tạo PROC USP_GetNumBillByDate
+        /**
+        * Tạo thủ tục USP_GetNumBillByDate
+        */
 CREATE PROC USP_GetNumBillByDate
 @checkIn date, @checkOut date
 AS 
@@ -521,8 +564,9 @@ BEGIN
     AND t.id = b.idTable
 END
 GO
-
-//Tạo PROC USP_GetListBillByDateForReport
+        /**
+        * Tạo thủ tục USP_GetListBillByDateForReport
+        */
 CREATE PROC USP_GetListBillByDateForReport
 @checkIn date, @checkOut date
 AS 
