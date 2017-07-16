@@ -12,6 +12,13 @@ using System.Windows.Forms;
 
 namespace QuanLyQuanCafe.DTO
 {
+        	        /**
+        *  Lớp Menu
+        *@param foodName @foodName
+        *@param count @count 
+        *@param price @price
+        *@param totalPrice @totalPrice
+        */
     public class Menu
     {
         public Menu(string foodName, int count, float price, float totalPrice = 0)
