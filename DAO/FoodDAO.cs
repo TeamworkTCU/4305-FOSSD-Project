@@ -19,11 +19,15 @@ namespace QuanLyQuanCafe.DAO
         }
 
         private FoodDAO() { }
-	        /**
-        * Hàm lấy món từ danh mục
-        *@param id @id
-        *@return list
+
+         /**
+        * Hàm lấy danh sách món từ danh mục
+        *@param id @id [ID Category]
+        *@param Food @Food [Food] 
+        *@param list @list [Food List] 
+        *@return result
         */
+        
         public List<Food> GetFoodByCategoryID(int id)
         {
             List<Food> list = new List<Food>();
@@ -40,12 +44,14 @@ namespace QuanLyQuanCafe.DAO
 
             return list;
         }
-
-	        /**
-        * Hàm lấy danh sách món
-        *@param id @id
-        *@return list
+        
+         /**
+        * Hàm lấy danh sách món 
+        *@param Food @Food [Food] 
+        *@param list @list [Food List] 
+        *@return result
         */
+
         public List<Food> GetListFood()
         {
             List<Food> list = new List<Food>();
@@ -63,11 +69,12 @@ namespace QuanLyQuanCafe.DAO
             return list;
         }
         
-	        /**
-        * Hàm  tìm kiếm món
-        *@param name @name
-        *@return list
+                 /**
+        * Hàm tìm kiếm món 
+        *@param name @name [Food Name] 
+        *@return result
         */
+
         public List<Food> SearchFoodByName(string name)
         {
             List<Food> list = new List<Food>();
@@ -85,13 +92,14 @@ namespace QuanLyQuanCafe.DAO
             return list;
         }
         
-        /**
-        *  Hàm thêm món
-        *@param name @name
-        *@param id @id
-        *@param price @price
-        *@return list
+                 /**
+        * Hàm thêm món 
+        *@param name @name [Food Name] 
+        *@param id @id [ID] 
+        *@param price @price [Price] 
+        *@return result
         */
+
         public bool InsertFood(string name, int id, float price)
         {
             string query = string.Format("INSERT dbo.Food ( name, idCategory, price ) VALUES  ( N'{0}', {1}, {2})", name, id, price);
@@ -100,14 +108,15 @@ namespace QuanLyQuanCafe.DAO
             return result > 0;
         }
         
-        /**
-        *  Hàm sửa món
-        *@param idFood @idFood
-        *@param name @name
-        *@param id @id
-        *@param price @price
+         /**
+        * Hàm sửa món 
+        *@param idFood @idFood [ID Food] 
+        *@param name @name [Food Name] 
+        *@param id @id [ID] 
+        *@param price @price [Price] 
         *@return result
         */
+
         public bool UpdateFood(int idFood, string name, int id, float price)
         {
             string query = string.Format("UPDATE dbo.Food SET name = N'{0}', idCategory = {1}, price = {2} WHERE id = {3}", name, id, price, idFood);
@@ -117,10 +126,12 @@ namespace QuanLyQuanCafe.DAO
         }
 
         /**
-        *  Hàm xóa món
-        *@param idFood @idFood
+        * Hàm xóa món 
+        *@param idFood @idFood [ID Food]    
         *@return result
         */
+
+        
         public bool DeleteFood(int idFood)
         {
             BillInfoDAO.Instance.DeleteBillInfoByFoodID(idFood);
