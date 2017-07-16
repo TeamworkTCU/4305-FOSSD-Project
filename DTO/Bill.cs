@@ -9,6 +9,13 @@ namespace QuanLyQuanCafe.DTO
 {
     public class Bill
     {
+        	        /**
+        * Hàm Bill
+        *@param DateTime @DateTime
+        *@param id @id 
+        *@param dateCheckOut @dateCheckOut
+        *@param discount @discount
+        */
         public Bill(int id, DateTime? dateCheckin, DateTime? dateCheckOut, int status, int discount = 0)
         {
             this.ID = id;
@@ -17,7 +24,10 @@ namespace QuanLyQuanCafe.DTO
             this.Status = status;
             this.Discount = discount;
         }
-
+        /**
+        * Hàm Bill
+        *@param row @row
+        */
         public Bill(DataRow row)
         {
             this.ID = (int)row["id"];
