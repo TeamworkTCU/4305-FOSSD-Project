@@ -121,11 +121,11 @@ SQL Server được tối ưu để có thể chạy trên môi trường cơ s�
 
 ## Đóng góp
 
-Vui lòng đọc [Dong_gop.md](https://github.com/TeamworkTCU/4305-FOSSD-Project/blob/master/Documents/Quy_tac_dong_gop.md) để biết thêm chi tiết về quy tắc và trình tự đóng góp vào dự án với chúng tôi
+Vui lòng đọc [Quy tắc đóng góp](https://github.com/TeamworkTCU/4305-FOSSD-Project/blob/master/Documents/Quy_tac_dong_gop.md) để biết thêm chi tiết về quy tắc và trình tự đóng góp vào dự án với chúng tôi
 
 ## Quy tắc ứng xử
 
-Vui lòng đọc [Quy_tac_ung_xu.md](https://github.com/TeamworkTCU/4305-FOSSD-Project/blob/master/Documents/Quy_tac_ung_xu.md) để biết thêm chi tiết về quy tắc ứng xử của chúng tôi.
+Vui lòng đọc [Quy tắc ứng xử](https://github.com/TeamworkTCU/4305-FOSSD-Project/blob/master/Documents/Quy_tac_ung_xu.md) để biết thêm chi tiết về quy tắc ứng xử của chúng tôi.
 
 ## Tài liệu cho người dùng cuối
 
@@ -140,4 +140,4 @@ Mời các bạn [Click đây để xem tài liệu thiết kế](https://github
 
 ## Lời cảm ơn
 
-Để hoàn thành tốt đề tài này chúng em xin cảm ơn thầy Mai Cường Thọ – giảng viên khoa CNTT Trường Đại học Nha Trang cùng các thầy cô bộ môn Kỹ thuật phần mềm đã tạo điều kiện cho chúng em nghiên cứu và hoàn thành đề tài. Một lần nữa chúng em xin trân trọng cảm ơn thầy Mai Cường Thọ đã tận tình giúp đỡ, hướng dẫn chúng em trong suốt quá trình thực hiện đề tài.
+Để hoàn thành tốt đề tài này chúng em xin cảm ơn thầy [Mai Cường Thọ](https://sites.google.com/site/maicuongtho/index) – giảng viên khoa CNTT Trường Đại học Nha Trang cùng các thầy cô bộ môn Kỹ thuật phần mềm đã tạo điều kiện cho chúng em nghiên cứu và hoàn thành đề tài. Một lần nữa chúng em xin trân trọng cảm ơn thầy [Mai Cường Thọ](https://sites.google.com/site/maicuongtho/index) đã tận tình giúp đỡ, hướng dẫn chúng em trong suốt quá trình thực hiện đề tài.
