@@ -21,8 +21,13 @@ namespace QuanLyQuanCafe.DAO
 
         private AccountDAO() { }
 
-        // Hàm mã hóa mật khẩu MD5
-        
+
+        /**
+        * Hàm mã hóa mật khẩu MD5
+        *@param username @userName[User Name]
+        *@param passWord @passWord[Pass Word]
+        *@return result.Rows.Count
+        */
         public bool Login(string userName, string passWord)
         {
             byte[] temp = ASCIIEncoding.ASCII.GetBytes(passWord);
@@ -44,8 +49,14 @@ namespace QuanLyQuanCafe.DAO
             return result.Rows.Count > 0;
         }
 
-        // Hàm sửa thông tin tài khoản
-        
+        /**
+        * Hàm sửa thông tin tài khoản
+        *@param username @userName[User Name]
+        *@param displayName @displayName [displayName]
+        *@param passWord @passWord[Pass Word]
+        *@param newPassword @newPassword  [newPass Word]        
+        *@return result
+        */
         public bool UpdateAccount(string userName, string displayName, string pass, string newPass)
         {
             int result = DataProvider.Instance.ExecuteNonQuery("exec USP_UpdateAccount @userName , @displayName , @password , @newPassword", new object[] { userName, displayName, pass, newPass });
@@ -69,9 +80,14 @@ namespace QuanLyQuanCafe.DAO
 
             return null;
         }
-
-        // Hàm thêm tài khoản
-        
+        /**
+        * Hàm thêm tài khoản
+        *@param UserName @UserName
+        *@param displayName @displayName 
+        *@param type @type
+        *@param password @password        
+        *@return result
+        */
         public bool InsertAccount(string name, string displayName, int type)
         {
             string query = string.Format("INSERT dbo.Account ( UserName, DisplayName, Type, password )VALUES  ( N'{0}', N'{1}', {2}, N'{3}')", name, displayName, type, "1962026656160185351301320480154111117132155");
@@ -80,8 +96,13 @@ namespace QuanLyQuanCafe.DAO
             return result > 0;
         }
 
-        // Hàm sửa tài khoản
-        
+        /**
+        * Hàm sửa tài khoản
+        *@param name @UserName
+        *@param displayName @displayName 
+        *@param type @type
+        *@return result
+        */
         public bool UpdateAccount(string name, string displayName, int type)
         {
             string query = string.Format("UPDATE dbo.Account SET DisplayName = N'{1}', Type = {2} WHERE UserName = N'{0}'", name, displayName, type);
@@ -89,9 +110,12 @@ namespace QuanLyQuanCafe.DAO
 
             return result > 0;
         }
-
-        // Hàm xóa tài khoản
-        
+ 
+        /**
+        * Hàm xóa tài khoản
+        *@param name @name
+        *@return result
+        */
         public bool DeleteAccount(string name)
         {
             string query = string.Format("Delete Account where UserName = N'{0}'", name);
@@ -100,8 +124,11 @@ namespace QuanLyQuanCafe.DAO
             return result > 0;
         }
 
-        // Hàm reset mật khẩu
-        
+        /**
+        * Hàm reset mật khẩu
+        *@param name @name
+        *@return result
+        */
         public bool ResetPassword(string name)
         {
             string query = string.Format("update account set password = N'1962026656160185351301320480154111117132155' where UserName = N'{0}'", name);
