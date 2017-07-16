@@ -9,6 +9,13 @@ namespace QuanLyQuanCafe.DTO
 {
     public class Account
     {
+        /**
+        * Hàm Account
+        *@param userName @userName
+        *@param displayName @displayName 
+        *@param type @type
+        *@param password @password
+        */
         public Account(string userName, string displayName, int type, string password = null)
         {
             this.UserName = userName;
@@ -16,7 +23,10 @@ namespace QuanLyQuanCafe.DTO
             this.Type = type;
             this.Password = password;
         }
-
+        /**
+        * Hàm Account
+        *@DataRow row @row
+        */
         public Account(DataRow row)
         {
             this.UserName = row["userName"].ToString();
