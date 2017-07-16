@@ -19,9 +19,9 @@ namespace QuanLyQuanCafe.DAO
         }
 
         private CategoryDAO() { }
-
-        /// Hàm lấy danh mục thức ăn
-        
+	    /**
+        * Hàm lấy danh mục
+        */
         public List<Category> GetListCategory()
         {
             List<Category> list = new List<Category>();
@@ -38,9 +38,9 @@ namespace QuanLyQuanCafe.DAO
 
             return list;
         }
-        
-
-
+	    /**
+        * Hàm lấy danh mục thức ăn
+        */
         public List<Category> GetListFoodCategory()
         {
             List<Category> list = new List<Category>();
@@ -57,7 +57,9 @@ namespace QuanLyQuanCafe.DAO
 
             return list;
         }
-
+	    /**
+        * Hàm lấy danh mục theo ID
+        */
         public Category GetCategoryByID(int id)
         {
             Category category = null;
@@ -75,9 +77,11 @@ namespace QuanLyQuanCafe.DAO
             return category;
         }
 
-        
-        // Thêm danh mục
-        
+	    /**
+        * Hàm thêm danh mục
+        *@param name @name
+        *@return result
+        */
         public bool InsertCategory(string name)
         {
             string query = string.Format("INSERT dbo.FoodCategory (name)  VALUES  ( N'{0}')", name);
@@ -85,9 +89,12 @@ namespace QuanLyQuanCafe.DAO
 
             return result > 0;
         }
-
-        // Sửa danh mục
-        
+	    /**
+        * Hàm Sửa danh mục
+        *@param name @name
+        *@param id @id
+        *@return result
+        */
         public bool UpdateCategory(string name, int id)
         {
             string query = string.Format("UPDATE dbo.FoodCategory SET name = N'{0}' WHERE id = {1}", name, id);
@@ -96,8 +103,11 @@ namespace QuanLyQuanCafe.DAO
             return result > 0;
         }
         
-        // Xóa danh mục
-
+	    /**
+        * Hàm Xóa danh mục
+        *@param id @id
+        *@return result
+        */
         public bool DeleteCategory(int id)
         {
             BillInfoDAO.Instance.DeleteBillInfoByFoodID(id);
