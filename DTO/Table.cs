@@ -7,6 +7,12 @@ using System.Threading.Tasks;
 
 namespace QuanLyQuanCafe.DTO
 {
+       /**
+        * Lớp Table
+        *@param id @id 
+        *@param name @name
+        *@param status @status
+        */
     public class Table
     {
         public Table(int id, string name, string status)
