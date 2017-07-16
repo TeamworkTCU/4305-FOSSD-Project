@@ -14,6 +14,13 @@ namespace QuanLyQuanCafe.DTO
 {
     public class BillInfo
     {
+        /**
+        * Hàm BillInfo
+        *@param id @id
+        *@param billID @billID 
+        *@param foodID @foodID
+        *@param count @count
+        */
         public BillInfo(int id, int billID, int foodID, int count)
         {
             this.ID = id;
@@ -21,7 +28,10 @@ namespace QuanLyQuanCafe.DTO
             this.FoodID = foodID;
             this.Count = count;
         }
-
+        /**
+        * Hàm BillInfo
+        *@DataRow row @row
+        */
         public BillInfo(DataRow row)
         {
             this.ID = (int)row["id"];
