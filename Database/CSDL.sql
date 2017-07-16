@@ -1,4 +1,5 @@
-﻿CREATE DATABASE QuanLyQuanCafe
+// Tạo CSDL QuanLyQuanCafe
+CREATE DATABASE QuanLyQuanCafe
 GO
 
 USE QuanLyQuanCafe
@@ -11,6 +12,7 @@ GO
 -- Bill
 -- BillInfo
 
+// Tạo bảng TableFood
 CREATE TABLE TableFood
 (
     id INT IDENTITY PRIMARY KEY,
@@ -19,6 +21,7 @@ CREATE TABLE TableFood
 )
 GO
 
+// Tạo bảng Account
 CREATE TABLE Account
 (   
     UserName NVARCHAR(100) NOT NULL PRIMARY KEY,
@@ -28,6 +31,7 @@ CREATE TABLE Account
 )
 GO
 
+// Tạo bảng FoodCategory
 CREATE TABLE FoodCategory
 (
     id INT IDENTITY PRIMARY KEY,
@@ -35,6 +39,7 @@ CREATE TABLE FoodCategory
 )
 GO
 
+// Tạo bảng Food
 CREATE TABLE Food
 (
     id INT IDENTITY PRIMARY KEY,
@@ -45,6 +50,7 @@ CREATE TABLE Food
 )
 GO
 
+// Tạo bảng Bill
 CREATE TABLE Bill
 (
     id INT IDENTITY PRIMARY KEY,
@@ -56,6 +62,7 @@ CREATE TABLE Bill
 )
 GO
 
+// Tạo bảng BillInfo
 CREATE TABLE BillInfo
 (
     id INT IDENTITY PRIMARY KEY,
@@ -68,6 +75,8 @@ CREATE TABLE BillInfo
 GO
 
 USE QuanLyQuanCafe
+
+// Nhập dữ liệu vào bảng Account
 INSERT INTO dbo.Account
     (
     UserName,
@@ -87,6 +96,8 @@ INSERT INTO dbo.Account
 VALUES (N'staff', N'Trần Thị Ngọc Trinh', N'123', 0)
 GO
 
+// Tạo PROC USP_GetAccountByUserName
+
 CREATE PROC USP_GetAccountByUserName
 @userName nvarchar(100)
 AS
@@ -97,7 +108,7 @@ GO
 
 EXEC dbo.USP_GetAccountByUserName @userName = N'admin'
 GO
-
+// Tạo PROC USP_Login
 CREATE PROC USP_Login
 @userName nvarchar(100),
 @passWord nvarchar(100)
@@ -116,7 +127,7 @@ BEGIN
 END
 GO
 
-
+// Tạo PROC USP_GetTableList
 CREATE PROC USP_GetTableList
 AS SELECT * FROM dbo.TableFood
 GO
@@ -124,7 +135,7 @@ GO
 EXEC DBO.USP_GetTableList
 GO
 
-
+// Tạo PROC USP_InsertBill
 CREATE PROC USP_InsertBill
 @idTable INT
 AS
@@ -145,6 +156,7 @@ BEGIN
 END
 GO
 
+// Tạo PROC USP_InsertBillInfo
 CREATE PROC USP_InsertBillInfo
 @idBill INT, @idFood INT, @count INT
 AS
@@ -332,6 +344,7 @@ ADD discount INT
 UPDATE dbo.Bill SET discount = 0
 GO
 
+//Tạo PROC USP_SwitchTabel
 CREATE PROC USP_SwitchTabel
 @idTable1 INT, @idTable2 int
 AS BEGIN
@@ -415,7 +428,7 @@ AS BEGIN
 END
 GO
 
-
+// Tạo PROC USP_GetListBillByDate
 CREATE PROC USP_GetListBillByDate
 @checkIn date, @checkOut date
 AS
@@ -427,7 +440,7 @@ BEGIN
 END
 GO
 
-
+// Tạo PROC USP_UpdateAccount
 CREATE PROC USP_UpdateAccount
 @userName NVARCHAR(100), @displayName NVARCHAR(100), @password NVARCHAR(100), @newPassword NVARCHAR(100)
 AS
@@ -450,6 +463,7 @@ GO
 
 USE QuanLyQuanCafe
 GO
+// Tạo TRIGGER UTG_DeleteBillInfo
 CREATE TRIGGER UTG_DeleteBillInfo
 ON dbo.BillInfo FOR DELETE
 AS 
@@ -475,6 +489,8 @@ GO
 
 USE QuanLyQuanCafe
 GO
+
+//Tạo PROC USP_GetListBillByDateAndPage
 CREATE PROC USP_GetListBillByDateAndPage
 @checkIn date, @checkOut date, @page int
 AS 
@@ -494,6 +510,7 @@ GO
 
 USE QuanLyQuanCafe
 GO
+//Tạo PROC USP_GetNumBillByDate
 CREATE PROC USP_GetNumBillByDate
 @checkIn date, @checkOut date
 AS 
@@ -505,6 +522,7 @@ BEGIN
 END
 GO
 
+//Tạo PROC USP_GetListBillByDateForReport
 CREATE PROC USP_GetListBillByDateForReport
 @checkIn date, @checkOut date
 AS 
