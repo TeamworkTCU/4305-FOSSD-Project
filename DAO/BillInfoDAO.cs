@@ -19,14 +19,19 @@ namespace QuanLyQuanCafe.DAO
         }
 
         private BillInfoDAO() { }
-
+		     /**
+        * Hàm DeleteBillInfoByFoodID
+        *@param id @id
+        */
         public void DeleteBillInfoByFoodID(int id)
         {
             DataProvider.Instance.ExecuteQuery("delete dbo.BillInfo WHERE idFood = " + id);
         }
 
-/// Hàm lấy danh sách hóa đơn
-        
+        /**
+        * Hàm  lấy danh sách hóa đơn
+        *@param id @id
+        */
         public List<BillInfo> GetListBillInfo(int id)
         {
             List<BillInfo> listBillInfo = new List<BillInfo>();
@@ -42,8 +47,13 @@ namespace QuanLyQuanCafe.DAO
             return listBillInfo;
         }
         
-       // Hàm thêm chi tiết hóa đơn
-
+	    /**
+        * Hàm thêm chi tiết hóa đơn
+        *@param name @UserName
+        *@param displayName @displayName 
+        *@param type @type
+        *@return result
+        */
         public void InsertBillInfo(int idBill, int idFood, int count)
         {
             DataProvider.Instance.ExecuteNonQuery("USP_InsertBillInfo @idBill , @idFood , @count", new object[] { idBill, idFood, count });
