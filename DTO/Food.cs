@@ -6,16 +6,16 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace QuanLyQuanCafe.DTO
-{
-    public class Food
-    {
-        /**
-        * Hàm Food
-        *@param id @id
-        *@param name @name 
+{        	        
+    /**
+        * Lớp Food
+        *@param id @id 
+        *@param name @name
         *@param categoryID @categoryID
         *@param price @price
         */
+    public class Food
+    {
         public Food(int id, string name, int categoryID, float price)
         {
             this.ID = id;
@@ -23,10 +23,7 @@ namespace QuanLyQuanCafe.DTO
             this.CategoryID = categoryID;
             this.Price = price;
         }
-        /**
-        * Hàm Food
-        *@DataRow row @row
-        */
+
         public Food(DataRow row)
         {
             this.ID = (int)row["id"];
