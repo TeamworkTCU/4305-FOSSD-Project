@@ -23,15 +23,19 @@ namespace QuanLyQuanCafe.DAO
 
         private TableDAO() { }
 
-        // Hàm chuyển bàn
-        
+	        /**
+        * Hàm chuyển bàn
+        *@param id1 @id1
+        *@param id2 @id2 
+        */
         public void SwitchTable(int id1, int id2)
         {
             DataProvider.Instance.ExecuteQuery("USP_SwitchTabel @idTable1 , @idTabel2", new object[] { id1, id2 });
         }
         
-        // Hàm lấy danh sách bàn
-
+	        /**
+        * Hàm lấy danh sách bàn
+        */
         public List<Table> GetListTable()
         {
             List<Table> list = new List<Table>();
@@ -48,8 +52,10 @@ namespace QuanLyQuanCafe.DAO
             return list;
         }
 
-        Hàm load danh sách bàn
         
+        	        /**
+        * Hàm load danh sách bàn
+        */
         public List<Table> LoadTableList()
         {
             List<Table> tableList = new List<Table>();
@@ -64,9 +70,13 @@ namespace QuanLyQuanCafe.DAO
 
             return tableList;
         }
-        
-        // Hàm thêm bàn
 
+	        /**
+        *  Hàm thêm bàn
+        *@param name @name
+        *@param status @status 
+        *@return result
+        */
         public bool InsertTable(string name, string status)
         {
             string query = string.Format("INSERT dbo.TableFood (name, status)  VALUES  ( N'{0}', N'{1}')", name, status);
@@ -75,8 +85,12 @@ namespace QuanLyQuanCafe.DAO
             return result > 0;
         }
 
-        // Hàm sửa bàn
-        
+	        /**
+        * Hàm sửa bàn
+        *@param name @name
+        *@param id @id 
+        *@return result
+        */
         public bool UpdateTable(string name, int id)
         {
             string query = string.Format("UPDATE dbo.TableFood SET name = N'{0}' WHERE id = {1}", name, id);
@@ -85,8 +99,11 @@ namespace QuanLyQuanCafe.DAO
             return result > 0;
         }
 
-        // Hàm xóa bàn
-        
+	        /**
+        *  Hàm xóa bàn
+        *@param id @id 
+        *@return result
+        */
         public bool DeleteTable(int id)
         {
             BillInfoDAO.Instance.DeleteBillInfoByFoodID(id);
