@@ -20,7 +20,7 @@ Chúng tôi dùng [Git](https://git-scm.com/) để tổ chức quản lý phiê
 
 ## Giấy phép
 
-Đồ án này được cấp phép theo giấy phép của General Public License - xem file [LICENSE.md](https://github.com/TeamworkTCU/4305-FOSSD-Project/blob/master/Documents/LICENSE.md) để biết thêm chi tiết.
+Đồ án này được cấp phép theo giấy phép của General Public License - xem file [LICENSE.md](https://github.com/TeamworkTCU/4305-FOSSD-Project/blob/master/Documents/LICENSE.md) để biết thêm chi tiết. Mọi sự sao chép, sử dụng với mục đích thương mại đều trái với quy tắc và giấy phép của chúng tôi.
 
 
 ## Kiến thức áp dụng
