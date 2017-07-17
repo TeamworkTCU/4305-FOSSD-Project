@@ -48,7 +48,7 @@ Tài liệu này chủ yếu hướng dẫn sinh viên với ngôn ngữ lập t
 Những lập trình viên tham gia dự án phát triển bằng ngôn ngữ C# và công cụ Visual Studio .Net.
 * CHI TIẾT VỀ CHUẨN LẬP TRÌNH [xin xem tại đây](https://github.com/TeamworkTCU/4305-FOSSD-Project/blob/master/Documents/Chu%E1%BA%A9n%20L%E1%BA%ADp%20Tr%C3%ACnh.md)
 
-## Triển khai
+## Tổ chức mã nguồn
 
 Đề Tài Cafe Tôm Tít được triển khai theo mô hình 3 lớp (Presentation - Bussiness Logic - Data Access)
 Khi bạn làm việc với các ứng dụng, nếu với những dự án nhỏ thì việc tạo một ứng dụng theo ý của chúng ta rất dễ dàng, tuy nhiên khi bạn làm với những dự án lớn hơn, cần nhiều người cùng làm hơn thì việc lập trình trở nên phức tạp hơn, vậy nên đễ dễ dàng hơn trong việc quản lý các thành phần của hệ thống cũng như ảnh hưởng tới các thành phần khác khi ta thay đổi một thành phần, chúng ta thường nhóm các thành phần có cùng chức năng lại với nhau. Chính vì thế các mô hình lập trình được sinh ra, một trong những mô hình lập trình đó là mô hình 3 lớp (3 - Layer).
